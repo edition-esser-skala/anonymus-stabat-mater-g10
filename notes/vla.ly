@@ -3,10 +3,3 @@
 % To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 \version "2.18.0"
-
-Viola = {
-	\relative c' {
-		\clef treble
-		\key es \major \time 4/4 \tempoStabatMater
-	}
-}

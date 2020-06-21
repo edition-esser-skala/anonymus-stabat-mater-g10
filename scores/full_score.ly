@@ -5,7 +5,7 @@
 \version "2.18.0"
 
 \include "../definitions.ly"
-
+% showLastLength = r1*4
 #(set-global-staff-size 15.87)
 
 \book {
@@ -17,79 +17,67 @@
 		\score {
 			<<
 				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "in Es"
-						\new Staff {
-							\set Staff.instrumentName = "Clarino I"
-							% \transpose c es
-							\ClarinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "Clarino II"
-							% \transpose c es
-							\ClarinoII
-						}
-					>>
+					\new Staff {
+						\set Staff.instrumentName = \markup \center-column { "Clarino I, II" "in Es" }
+						% \transpose c es
+						\partcombine \StabatMaterClarinoI \StabatMaterClarinoII
+					}
 				>>
 				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
+					\new GrandStaff <<
 						\set GrandStaff.instrumentName = "Violino"
 						\new Staff {
 							\set Staff.instrumentName = "I"
-							\ViolinoI
+							\StabatMaterViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "II"
-							\ViolinoII
+							\StabatMaterViolinoII
 						}
 					>>
-					\new Staff {
-						\set Staff.instrumentName = "Viola"
-						\Viola
-					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = \SopranoIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Soprano" { \dynamicUp \SopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \StabatMaterSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \SopranoLyrics
+					\new Lyrics \lyricsto Soprano \StabatMaterSopranoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = \AltoIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Alto" { \dynamicUp \AltoNotes }
+						\new Voice = "Alto" { \dynamicUp \StabatMaterAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \AltoLyrics
+					\new Lyrics \lyricsto Alto \StabatMaterAltoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = \TenoreIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Tenore" { \dynamicUp \TenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \StabatMaterTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \TenoreLyrics
+					\new Lyrics \lyricsto Tenore \StabatMaterTenoreLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "Basso"
-						\new Voice = "Basso" { \dynamicUp \BassoNotes }
+						\new Voice = "Basso" { \dynamicUp \StabatMaterBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \BassoLyrics
+					\new Lyrics \lyricsto Basso \StabatMaterBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "Organo" "e Bassi" } }
 						% \transpose c c,
-						\Organo
+						\StabatMaterOrgano
 					}
 				>>
-				\new FiguredBass { \BassFigures }
+				\new FiguredBass { \StabatMaterBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 90 }
+			\midi { \tempo 4 = 60 }
 		}
 	}
 }
