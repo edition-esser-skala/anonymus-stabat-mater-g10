@@ -629,6 +629,11 @@ tocLabel = #(define-music-function
 
 
 tempoStabatMater = \tempoMarkup "Adagio"
+tempoOQuam = \tempoMarkup "Andante"
+tempoEiaMater = \tempoMarkup "Adagio"
+tempoVirgoVirginum = \tempoMarkup "Andante"
+tempoChriste = \tempoMarkup "Adagio"
+tempoAmen = \tempoMarkup "Alla breve"
 
 
 \include "notes/clno1.ly"
