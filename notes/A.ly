@@ -68,3 +68,226 @@ StabatMaterAltoLyrics = \lyricmode {
 	per -- trans -- i -- vit gla -- di --
 	us. %22 finis
 }
+
+OQuamAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 3/8 \autoBeamOff \tempoOQuam
+			\set Score.currentBarNumber = #23
+		R4.*21 %43
+		\mvTr c4\pE^\soloE c8
+		c([ h)] as' %45
+		as([ g)] f
+		\tuplet 3/2 8 { es16([ d c)] } c8 r
+		es4 es8
+		es4 es8
+		es4 es8 %50
+		\appoggiatura es8 d4 r8
+		g4 g8
+		g([ f)] as
+		as([ g)] f
+		\tuplet 3/2 4 { f16([ d f)] } es8 r %55
+		as4 as8
+		as([ g)] b
+		b([ as)] g
+		\tuplet 3/2 4 { g16([ e g)] } f8 r
+		as4. %60
+		as
+		r8 a fis
+		\slurDashed g16([ a) a( b) b8] \slurSolid
+		\tuplet 3/2 4 { c16([ b a?)] } g8 fis
+		g r r %65
+		c([ b16 a)] g([ fis)]
+		g4 r8
+		c([ b16 a)] g([ fis)]
+		g4 r8
+		R4.*12 %81
+		c,4 c8
+		c([ h)] as'
+		as([ g)] f
+		f16[ e] g4~ %85
+		g16[ f] b8[ \once \tieDashed as]~
+		as g r
+		e4.
+		f
+		g16 b \appoggiatura b as8. g16 %90
+		\appoggiatura g8 f4 r8
+		d!4.
+		es!
+		f16 as \appoggiatura as g8. f16
+		\appoggiatura f8 es4 r8 %95
+		g4 as8
+		g4 g16([ as)]
+		b8([ as)] g
+		g f r
+		as4 b8 %100
+		as4 as16([ b)]
+		c8([ h)] a
+		a g r
+		es4.
+		e %105
+		f
+		fis
+		g
+		fis4 f8
+		es4 es8 %110
+		\tuplet 3/2 4 { as16([ g f)] } es8 d
+		c4 r8
+		as' g8.([ d16)]
+		c4 r8
+		as' g8. d16 %115
+		c4 r8
+		R4.*4 %120
+		\mvTr es4\fE^\tutti es8
+		es d r
+		as'([ g)] f
+		es d r
+		es4 es8 %125
+		es d r
+		as'([ g)] f
+		es d r
+		g4 g8
+		as4.( %130
+		f)
+		g
+		g4 g8
+		fis4 g8
+		g4 fis8 %135
+		g4^\critnote r8
+		R4.*4 %140
+		g4 f!8
+		e([ f)] g
+		f4 es!8
+		d([ es)] f
+		g4 f8 %145
+		es([ f)] g
+		g4 g8
+		g g r
+		es4.
+		es %150
+		d~
+		d
+		c
+		c4 h8
+		c r r %155
+		r g' g
+		as([ f)] f16([ es)]
+		d4 d8
+		c4 r8
+		R4.*4 %163
+		R4.\fermataMarkup \bar "||" %164 finis
+	}
+}
+
+OQuamAltoLyrics = \lyricmode {
+	Fu -- it %44
+	il -- la %45
+	be -- ne --
+	di -- cta
+	ma -- ter
+	u -- ni --
+	ge -- ni -- %50
+	ti!
+	Quae mae --
+	re -- bat
+	et __ do --
+	le -- bat, %55
+	pi -- a
+	ma -- ter
+	cum vi --
+	de -- bat
+	na -- %60
+	ti,
+	na -- ti
+	poe --
+	nas __ in -- cli --
+	ti, %65
+	in -- cli --
+	ti,
+	in -- cli --
+	ti.
+
+	Ma -- trem %82
+	Chri -- sti
+	si __ vi --
+	de -- _ %85
+	_
+	ret
+	in
+	tan --
+	to sup -- pli -- ci -- %90
+	o,
+	in
+	tan --
+	to sup -- pli -- ci --
+	o? %95
+	Quis non
+	pos -- set
+	con -- tri --
+	sta -- ri,
+	Chri -- sti %100
+	ma -- trem
+	con -- tem --
+	pla -- ri
+	do --
+	len -- %105
+	_
+	_
+	_
+	_ _
+	_ tem %110
+	cum fi -- li --
+	o,
+	do -- len --
+	tem
+	cum fi -- li -- %115
+	o?
+
+	Pro pec -- %121
+	ca -- tis
+	su -- ae
+	gen -- tis
+	vi -- dit %125
+	Ie -- sum
+	in __ tor --
+	men -- tis
+	et fla --
+	gel -- %130
+
+	lis,
+	et fla --
+	gel -- lis
+	sub -- di --
+	tum.
+
+	Vi -- dit %141
+	su -- um
+	dul -- cem
+	na -- tum
+	mo -- ri -- %145
+	en -- tem,
+	de -- so --
+	la -- tum,
+	cum
+	e -- %150
+	mi --
+
+	sit
+	spi -- ri --
+	tum, %155
+	cum e --
+	mi -- sit
+	spi -- ri --
+	tum. %159 finis
+}
+
+% AltoNotes = {
+% 	\relative c' {
+% 		\clef treble
+%
+% 	}
+% }
+%
+% AltoLyrics = \lyricmode {
+%
+% }

@@ -58,149 +58,313 @@ StabatMaterBassFigures = \figuremode {
 	r1 %22 finis
 }
 
-	% \time 3/8 \tempoOQuam \newSpacingSection
-	% 	\mvTr c8\fE-\solo es c \noBreak
-	% d4 c8
-	% h4 g8 %25
-	% c4 d8
-	% es4 r8
-	% f4-! r8
-	% g4-! r8
-	% as4-! r8 %30
-	% as as as
-	% g4 g,8
-	% r es' c
-	% h g c
-	% r es c %35
-	% h g c
-	% f g g
-	% as f g
-	% as f g
-	% c,4 r8 %40
-	% \mvTr c\p-\critnote es c
-	% d4 c8
-	% h4 g8
-	% c es c
-	% d4 c8 %45
-	% h4 g8
-	% c4 d8
-	% es4 r8
-	% f4 r8
-	% fis fis fis %50
-	% g g, r
-	% es' g es
-	% b4.
-	% d
-	% es4 r8 %55
-	% f as f
-	% c4.
-	% e
-	% f8 f, r
-	% f'4 r8 %60
-	% es!4 r8
-	% d4 r8
-	% g, g g
-	% c d d
-	% g, a b %65
-	% c d4
-	% g,8 a b
-	% c d4
-	% g,8 a h
-	% c d es %70
-	% d c b!
-	% c d d
-	% es c d
-	% es c d
-	% g,4 r8 %75
-	% g' b g
-	% a4 g8
-	% fis4 d8
-	% g4 f8
-	% es h c %80
-	% g' g, r
-	% c es c
-	% d4 c8
-	% h4 g8
-	% c4 b'!8 %85
-	% as e f
-	% c' c, r
-	% c4 r8
-	% c4 r8
-	% c e e %90
-	% f f, f'
-	% b,4 r8
-	% b4 r8
-	% b d d
-	% es! g f %95
-	% es4 r8
-	% es4 r8
-	% e e e
-	% f f, f'
-	% f,4 r8 %100
-	% f'4 r8
-	% fis4 fis8
-	% g g, r
-	% c'4 r8
-	% b!4 r8 %105
-	% a4 r8
-	% as4 r8
-	% g4.~
-	% g~
-	% g4 c,8 %110
-	% f g g,
-	% c d es
-	% f g g,
-	% c d es
-	% f g g, %115
-	% c\f d e
-	% f g as
-	% g f es!
-	% f g g
-	% as f g %120
-	% c,-\tutti es c
-	% g' g, r
-	% f' g g,
-	% c g r
-	% c es c %125
-	% g' g, r
-	% f' g g,
-	% c g r
-	% c4 r8
-	% f4 r8 %130
-	% b,4 r8
-	% es4 r8
-	% es16 es es es es es
-	% d4.~
-	% d %135
-	% g,4 h8
-	% c4 es8
-	% d-! d-! d-!
-	% d-! d-! d-!
-	% c-! d-! d-! %140
-	% g4.
-	% c,
-	% f
-	% b,
-	% es4 d8 %145
-	% c4 c'8
-	% h g c
-	% g g, r
-	% g4-! r8
-	% g4-! r8 %150
-	% g4-! r8
-	% g4-! r8
-	% g4-! r8
-	% g4.
-	% c8 r r %155
-	% r c' b!
-	% as4 f8
-	% g4 g,8
-	% c4 e8
-	% f4 as8 %160
-	% g g,-! g-!
-	% g-! g-! g-!
-	% f' g g, \noBreak
-	% c4.\fermata \bar "||"
+OQuamOrgano = {
+	\relative c {
+		\clef bass
+		\key c \minor \time 3/8 \tempoOQuam
+			\set Score.currentBarNumber = #23
+		\mvTr c8\fE-\solo es c
+		d4 c8
+		h4 g8 %25
+		c4 d8
+		es4 r8
+		f4-! r8
+		g4-! r8
+		as4-! r8 %30
+		as as as
+		g4 g,8
+		r es' c
+		h g c
+		r es c %35
+		h g c
+		f g g
+		as f g
+		as f g
+		c,4 r8 %40
+		\mvTr c\p-\critnote es c
+		d4 c8
+		h4 g8
+		c es c
+		d4 c8 %45
+		h4 g8
+		c4 d8
+		es4 r8
+		f4 r8
+		fis fis fis %50
+		g g, r
+		es' g es
+		b4.
+		d
+		es4 r8 %55
+		f as f
+		c4.
+		e
+		f8 f, r
+		f'4 r8 %60
+		es!4 r8
+		d4 r8
+		g, g g
+		c d d
+		g, a b %65
+		c d4
+		g,8 a b
+		c d4
+		g,8\fE a h
+		c d es %70
+		d c b!
+		c d d
+		es c d
+		es c d
+		g,4 r8 %75
+		g'\pE b g
+		a4 g8
+		fis4 d8
+		g4 f8
+		es h c %80
+		g' g, r
+		c es c
+		d4 c8
+		h4 g8
+		c4 b'!8 %85
+		as e f
+		c' c, r
+		c4 r8
+		c4 r8
+		c e e %90
+		f f, f'
+		b,4 r8
+		b4 r8
+		b d d
+		es! g f %95
+		es4 r8
+		es4 r8
+		e e e
+		f f, f'
+		f,4 r8 %100
+		f'4 r8
+		fis4 fis8
+		g g, r
+		c'4 r8
+		b!4 r8 %105
+		a4 r8
+		as4 r8
+		g4.~
+		g~
+		g4 c,8 %110
+		f g g,
+		c d es
+		f g g,
+		c d es
+		f g g, %115
+		c\f d e
+		f g as
+		g f es!
+		f g g
+		as f g %120
+		c,-\tutti es c
+		g' g, r
+		f' g g,
+		c g r
+		c es c %125
+		g' g, r
+		f' g g,
+		c g r
+		c4 r8
+		f4 r8 %130
+		b,4 r8
+		es!4 r8
+		es16 es es es es es
+		d4.~
+		d %135
+		g,4 h8
+		c4 es8
+		d d-! d-!
+		d-! d-! d-!
+		c-! d-! d-! %140
+		g4.
+		c,
+		f
+		b,
+		es4 d8 %145
+		c4 c'8
+		h g c
+		g g, r
+		g4-! r8
+		g4-! r8 %150
+		g4-! r8
+		g4-! r8
+		g4-! r8
+		g4.
+		c8 r r %155
+		r c' b!
+		as4 f8
+		g4 g,8
+		c4 e8
+		f4 as8 %160
+		g g,-! g-!
+		g-! g-! g-!
+		f' g g,
+		c4-\critnote r8\fermata \bar "||" %164 finis
+	}
+}
+
+OQuamBassFigures = \figuremode {
+	r4. %23
+	<7>8 <6!> <6>
+	<7> <6> <7 _!> %25
+	r4.
+	<6>
+	r
+	r
+	r %30
+	<6\\>
+	<[_!]>
+	r8 <[6]>4
+	<6>8 <[7 _!]>4
+	r8 <[6]>4 %35
+	\bo <[6 \l]>8 \bc <[7 _!]>4
+	r8 <_!>4
+	r4.
+	r
+	r %40
+	r
+	<7>8 <6!> <6>
+	<6> <6> <7 _!>
+	r4.
+	<7>8 <6!> <6> %45
+	<7> <6> <7 _!>
+	r4.
+	<6>
+	<7>
+	<7 _!> %50
+	<6 4>8 <5 _!>4
+	r4.
+	<6 4>8 <5 3>4
+	<7 5>8 <6 4> <5 3>
+	<9 4> <8 3>4 %55
+	r4.
+	<6 4>8 <5 _!>4
+	<7- 5>8 <6 4> <5 3>
+	<9 4> <8 3>4
+	r4. %60
+	<2>
+	<7 5! _+>
+	r
+	r8 <6 4> <5! _+>
+	r <6\\> <6> %65
+	r <8 6>16 <7 5!> <6 4> <5! _+>
+	r8 <6\\> <6>
+ 	r <8 6>16 <7 5!> <6 4> <5! _+>
+	<_!>8 <6!> <\t>
+	r <6!> <6> %70
+	<5! _+> <\t \t> <6>
+	<6!> <6 4> <5 _!>
+	r4 <5! _+>8
+	r4 q8
+	r4. %75
+	r
+	<7>8 <6\\> <6>
+	<7> <6> <7 5! _+>
+	<4>16 <_!>8. <\t>8
+	<7>16 <6> <6 5>4 %80
+	<6 4>8 <5 _!>4
+	r4.
+	<7>8 <6!> <6>
+	<7> <6> <7 _!>
+	<4>16 <_!>8. <\t>8 %85
+	<7>16 <6> <6 5>4
+	<6 4>8 <5 _!>4
+	<\t \t>4.
+	<6 4>
+	<9- 7 _!>8 <6 4> <5 3> %90
+	<9 4> <8 3>4
+	<5 _!>4.
+	<6 4>
+	<9 7>8 <6 4> <5 3>
+	<9 4> <6>4 %95
+	r4.
+	r
+	<7- 5>8 <6 4> <5 3>
+	<9 4> <8 3>4
+	r4. %100
+	r
+	<7 5 _!>8 <6! 4!> <5 _!>
+	<9 4> <8 _!>4
+	r4.
+	<4! 2> %105
+	<6>
+	<6\\>
+	<4>8 <_!> <8 6>
+	<7+ \t> <\t 5> <7! \t>
+	<6 5>4. %110
+	<6>8 <6 4> <5 _!>
+	r8 <6!> <6>
+	r <6 4> <5 _!>
+	r <6!> <6>
+	r <6 4> <5 _!> %115
+	<_!> <6-> <\t>
+	r <6!> <6>
+	<_!> <\t> <6>
+	q <6 4> <5 _!>
+	r4 <_!>8 %120
+	r4.
+	<6 4>8 <5 _!>4
+	r8 <8 6> <7 5 [_!]>
+	r <_!>4
+	r4. %125
+	<6 4>8 <5 _!>4
+	r8 <8 6> <7 5 [_!]>
+	r <_!>4
+	<7- _!>4.
+	<_-> %130
+	<7>
+	r
+	<6\\>
+	<8 [5!] _+>8 <7! \t \t> <6 4>
+	\bo <[5!] 4>4 \bc <[\t] _+>8 %135
+	r4 <[6 5!]>8
+	r4 <[6\\ 5-]>8
+	<[5! _+]>4.
+	r
+	r %140
+	<_!>
+	q
+	r
+	r
+	r4 <6!>8 %145
+	r4.
+	<5>8 <[7 _!]>4
+	<6 4>8 <5 _!>4
+	r4.
+	r %150
+	r
+	r
+	r
+	<4>4 <_!>8
+	<_->4. %155
+	r4 <2>8
+	<[6]>4 <6>8
+	<4>4 <_!>8
+	r4 <[6 5-]>8
+	r4 <[6\\ 5-]>8 %160
+	<[_!]>4.
+	r
+	r8 \bo <[6 4]> \bc <[5 _!]>
+	r4. %164 finis
+}
+
+% Organo = {
+% 	\relative c {
+% 		\clef bass
+%
+% 	}
+% }
+%
+% BassFigures = \figuremode {
+%
+% }
+
+
 	% \time 4/4 \tempoEiaMater \newSpacingSection
 	% 	\mvTr es8\fE-\solo f g es b' b, r4 \noBreak %165
 	% b8 c d b es4 r8 es
@@ -513,69 +677,7 @@ StabatMaterBassFigures = \figuremode {
 	% es b
 	% es r\fermata \bar "|." %463 FINIS
 
-	% r4.
-	% <7>8 <6!> <6>
-	% <7> <6> <7 _!> %25
-	% r4.
-	% <6>
-	% r
-	% r
-	% r %30
-	% <6\\>
-	% <[_!]>
-	% r
-	% <6>
-	% r %35
-	% <[6]>
-	% r8 <_!>4
-	% r4.
-	% r
-	% r %40
-	% r4.*80 %120
-	% r4.
-	% <6 4>8 <5 _!>4
-	% r8 <8 6> <7 5 [_!]>
-	% r <_!>4
-	% r4. %125
-	% <6 4>8 <5 _!>4
-	% r8 <8 6> <7 5 [_!]>
-	% r <_!>4
-	% <7- _!>4.
-	% <_-> %130
-	% <7>
-	% r
-	% <6\\>
-	% <8 _+>8 <7! \t> <6 4>
-	% <4>4 <_+>8 %135
-	% r4.
-	% r
-	% r
-	% r
-	% r %140
-	% <_!>
-	% q
-	% r
-	% r
-	% r4 <6!>8 %145
-	% r4.
-	% <5>
-	% <6 4>8 <5 _!>4
-	% r4.
-	% r %150
-	% r
-	% r
-	% r
-	% <4>4 <_!>8
-	% <_->4. %155
-	% r4 <2>8
-	% r4 <6>8
-	% <4>4 <_!>8
-	% r4.
-	% r %160
-	% r
-	% r
-	% r
-	% r
+
 	% r1 %165
 	% r
 	% <4 2>8 <3 1>4. <4 2>8 <3 1>4.

@@ -77,11 +77,8 @@
 	bookTitleMarkup = \markup {
 		\fill-line {
 			\line {
-				\fontsize #3 {
-	 				\with-color #(rgb-color .8313 0 0) { \fromproperty #'header:number }
-	 			 	\hspace #3
-	 			 	\fromproperty #'header:title
-				}
+				\fontsize #3 { \fromproperty #'header:title }
+				\fromproperty #'header:subtitle
 			}
  		}
 	}

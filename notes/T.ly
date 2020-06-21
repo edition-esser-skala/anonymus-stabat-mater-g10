@@ -66,3 +66,100 @@ StabatMaterTenoreLyrics = \lyricmode {
 	per -- trans -- i -- vit gla -- di --
 	us. %22 finis
 }
+
+OQuamTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \minor \time 3/8 \autoBeamOff \tempoOQuam
+			\set Score.currentBarNumber = #23
+		R4.*98 %120
+		\mvTr g4\fE^\tutti g8
+		g g r
+		c4 g8
+		g g r
+		g4 g8 %125
+		g g r
+		c4 g8
+		g g r
+		b!4 b8
+		c4.( %130
+		as)
+		b
+		g4 g8
+		a4 b16([ c)]
+		d4 d8 %135
+		d4 r8
+		R4.*4 %140
+		d4 d8
+		g,4 g8
+		c4 as8
+		d4 d8
+		b4 d8 %145
+		g,4 c8
+		d4 c8
+		c h r
+		g4.
+		g %150
+		\once \tieDashed g~
+		g
+		g
+		g4 g8
+		g r r %155
+		r es' d
+		c4 as8
+		g4 g8
+		g4 r8
+		R4.*4 %163
+		R4.\fermataMarkup \bar "||" %164 finis
+	}
+}
+
+OQuamTenoreLyrics = \lyricmode {
+	Pro pec -- %121
+	ca -- tis
+	su -- ae
+	gen -- tis
+	vi -- dit %125
+	Ie -- sum
+	in tor --
+	men -- tis
+	et fla --
+	gel -- %130
+
+	lis,
+	et fla --
+	gel -- lis
+	sub -- di --
+	tum.
+
+	Vi -- dit %141
+	su -- um
+	dul -- cem
+	na -- tum
+	mo -- ri -- %145
+	en -- tem,
+	de -- so --
+	la -- tum,
+	cum
+	e -- %150
+	mi --
+
+	sit
+	spi -- ri --
+	tum, %155
+	cum e --
+	mi -- sit
+	spi -- ri --
+	tum. %159 finis
+}
+
+% TenoreNotes = {
+% 	\relative c' {
+% 		\clef "treble_8"
+%
+% 	}
+% }
+%
+% TenoreLyrics = \lyricmode {
+%
+% }

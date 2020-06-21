@@ -32,3 +32,153 @@ StabatMaterViolinoII = {
 		es1\fermata \bar "||"
 	}
 }
+
+OQuamViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 3/8 \tempoOQuam
+			\set Score.currentBarNumber = #23
+		c'4.~\fE
+		c8 h as'~
+		as g f %25
+		\tuplet 3/2 8 { es16 d c } c8 r
+		r c-\parenthesize-! c-\parenthesize-!
+		r c32( h c d) c8
+		r c-\parenthesize-! c-\parenthesize-!
+		r c32( h c d) c16[ c'] %30
+		c c8 c fis,16
+		\appoggiatura fis g8 g, r
+		g'4.~
+		g16 d8 f16 \appoggiatura f \tuplet 3/2 8 { es[ d c] }
+		g'4.~ %35
+		g16 d8 f es16
+		d as'8 g h,16
+		c as'8 g h,16
+		c as8 g h,16
+		\appoggiatura h8 c4 r8 %40
+		\once \tieDashed c'4.~\p
+		c8 h as'~
+		as g f
+		\tuplet 3/2 8 { es16 d c } c,4~
+		c8 h as'~ %45
+		as g f
+		\tuplet 3/2 8 { es16 d c } c8 r
+		r es es
+		r es32( d es f) es8
+		r16 es8 es es16 %50
+		\appoggiatura es8 d4 r8
+		g4 g8~
+		g f as~
+		as g f
+		\tuplet 3/2 8 { f16 d f } es8 r %55
+		as4 \once \tieDashed as8~
+		as g b~
+		b as g
+		\tuplet 3/2 8 { g16 e g } f8 r
+		r as as %60
+		r as as
+		r a fis
+		g16( a) a( b) b8
+		\tuplet 3/2 8 { c16[ b a] } g8 fis
+		g16 fis'8\f g d16 %65
+		\appoggiatura d c8\p b16 a g fis
+		g fis'8\f g d16
+		\appoggiatura d c8\p b16 a g fis
+		g\f g'8 f! d16~
+		d es8 h c16 %70
+		cis d8 fis, g16
+		a es'8 d fis,16
+		g es'8 d fis,16
+		g es'8 d fis,16
+		g8 g, r %75
+		\once \tieDashed g'4.~\p
+		g8 fis \once \tieDashed es'~
+		es d c~
+		c16 h d4~
+		d16 c d8 c %80
+		c h r
+		c,4.~
+		c8 h as'~
+		as g f~
+		f16 e g4~ %85
+		g16 f g8 f~
+		f e r
+		r e e
+		r f f
+		g16[ b] \appoggiatura b as8. g16 %90
+		\appoggiatura g8 f4.
+		r8 d d
+		r es! es
+		f16[ as] \appoggiatura as g8. f16
+		\appoggiatura f8 es4 r8 %95
+		r g as
+		r g b~
+		b as g
+		g f r
+		r as b %100
+		r as as16 b
+		c8 h a
+		a g r
+		r es es
+		r e32( d e f) e8 %105
+		r f f
+		r fis fis
+		g4.
+		fis4 f8
+		es4. %110
+		\tuplet 3/2 8 { as16[ g f] } es8 d
+		c16 h''8\f c g16
+		as\p as8 g h,16
+		c h'8\f c g16
+		f\p as8 g h,16 %115
+		c\f c'8 b! g16~
+		g as8 e f16
+		fis g8 h, c16
+		d as'8 g h,16
+		c as'8 g h,16 %120
+		c8 es, es~
+		es d d32([ es f g)]
+		as8 g f
+		es d16. f32 \tuplet 3/2 8 { f16[ es d] }
+		\once \tieDashed es4.~ %125
+		es8 d d32([ es f g)]
+		as8 g f
+		es d r
+		r16 b'! b b b b
+		r as as as as as %130
+		r as as as as as
+		r g g g g g
+		r cis cis cis cis cis
+		d8 c b
+		a4. %135
+		g32([ a b c)] d16( d,) d( f!)
+		es32([ d es f)] g16( es) es( cis)
+		d8 c' a
+		b fis g
+		r16 c8 b fis16 %140
+		g4 f8
+		e f g
+		f4 es8
+		d es f
+		es4 f8 %145
+		es f g
+		d'4 c8~
+		c h r
+		r16 es, es es es es
+		r es es es es es %150
+		r d d d d d
+		r d d d d d
+		r c c c c c
+		c c c c h h
+		c8 c' c
+		c4.~
+		c8 f,8. es16
+		\appoggiatura es8 d4.
+		c'32([ d es f)] g16( g,) g( b!)
+		as32([ g as b)] c16( as) as( fis) %160
+		g8 f d
+		es h c
+		r16 f'8 es d,16
+		c4 r8\fermata \bar "||" %164 finis
+	}
+}
