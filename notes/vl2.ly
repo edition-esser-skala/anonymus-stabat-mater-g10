@@ -182,3 +182,35 @@ OQuamViolinoII = {
 		c4 r8\fermata \bar "||" %164 finis
 	}
 }
+
+EiaMaterViolinoII = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 4/4 \tempoEiaMater
+			\set Score.currentBarNumber = #165
+		R1*46 %210
+		r2 r16 b\fE d16. f32 b16. d32 f16. b32
+		as4 r r16 es, g16. b32 es16. f32 g16. as32
+		g8 as4 g16 f g8 as4 g16 f
+		g8.( as32 g) f8 es es( d16.) d32 d16( c) c( b)
+		a4. b16 c b8 es4 d16 c %215
+		d8 b' c, a' b d, d8.( f32 d)
+		c8 c c8.( es32 c) b16 g8 f32 es d8. c16
+		b8 r r4 r16 f' a16. c32 f16. c'32 a16. f32
+		\appoggiatura f8 es4 r r16 b, d16. f32 b16. d32 f16. b32
+		h8 f4 es16 d es8 es4 d16 c %220
+		f,8.( as32 g) f8 es es d16. d32 d16 es8 f16
+		f4. es16 d es8 as4 g16 f
+		es4 d es8 e' e8.( g32 e)
+		f8 d d8.( f32 d) es16 as,8 g32 f es8. d16
+		c4 r r16 f as16. c32 f16. g32 as([ g f es)] %225
+		\appoggiatura es8 d4 r r16 es, g16. b32 es16. f32 g16. as32
+		g8 as4 g16 f g8 as4 g16 f
+		g8.( as32 g) f8 es es d r d
+		d8.(\trill es32 f) es8 es c8.(\trill b32 c) d8 g,
+		g8.( as32 b) as8 as g4 f %230
+		g8 g g8.(\trill as32 b) as8 \tuplet 3/2 8 { c16 b as } g8 f
+		g g g8.( as32 b) \appoggiatura b8 as4 r8 f
+		es4 d es2\fermata \bar "||" %233 finis
+	}
+}

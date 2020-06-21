@@ -183,6 +183,82 @@ OQuamViolinoI = {
 	}
 }
 
+EiaMaterViolinoI = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 4/4 \tempoEiaMater
+			\set Score.currentBarNumber = #165
+		r2 r16 \mvTr b'\fE-\solo f16. d32 b8 r
+		r2 r16 es' b16. g32 es8 g
+		\appoggiatura b16 as8 g4 as16 b \appoggiatura b as8 g4 es'8
+		\appoggiatura es f4. es8 d16. b32 f16. d32 b8 f''
+		fis16( g) h,( c) \slurDashed e( f) a,( b) \slurSolid \tuplet 3/2 8 { es f d c[ d b] a b g f[ g es] }
+		\tuplet 3/2 8 { d[ es f] g es' c } b8.\trill a16 \appoggiatura a8 b4 r8 b %170
+		b8.(\trill c32 d) \tuplet 3/2 8 { es16 es, es' des[ es, des'] } c8( as'4) g8~
+		g f4 es8 es\trill d r4
+		r8 r16 es \tuplet 3/2 8 { d es f b,,[ f' as] } \appoggiatura as g8. es'16 \tuplet 3/2 8 { d es f b,,[ f' as] }
+		g8 es' f g as4. g16 f
+		\tuplet 3/2 8 { es[ b as] g f es } b8. d'16\trill \appoggiatura d8 es4 r %175
+		g,8\p g g g r d d es
+		f f f f f es16 f g8 r
+		R1*2
+		c8 c c c r b \tuplet 3/2 8 { b16 c a } b8 %180
+		b b b b r as \tuplet 3/2 8 { as16 b g as[ b c] }
+		c4. b8 a f16 g a b c32( d es f)
+		g4 r r8 f,4 g8
+		f es d c b16( c32 d es f g a) b( c d es f g a b)
+		g4 r r8 f,4 g8 %185
+		f es d c d4 d'\f
+		\appoggiatura f16 es8 d4 es16 f \appoggiatura f es8 d4 es16 f
+		\appoggiatura f es8.( d32 c) \appoggiatura es16 d8.( c32 b) \appoggiatura d8 c4 r8 f
+		fis16( g) h,( c) r g' \tuplet 3/2 8 { g[ f es] } e( f) a,( b) r f' \tuplet 3/2 8 { f[ es d] }
+		\tuplet 3/2 8 { es f d c[ d b] a b g f[ g es] d es f \appoggiatura a g[ f es] } d8 c\trill %190
+		b4 r r8 a'\p b c
+		b8.( c32 d) \tuplet 3/2 8 { es16[ d c] f, es d } c8 d \tuplet 3/2 8 { b16 d es f[ g a] }
+		b8[ r16 d] \tuplet 3/2 8 { es16 es, es' des[ es, des'] } \appoggiatura des c8[ r16 e] \tuplet 3/2 8 { f f, f' es[ f, es'] }
+		d8[ r16 fis] \tuplet 3/2 8 { g g, g' f[ g, f'] } es8.( f32 g) as8 g
+		g f r g, \appoggiatura b16 as8 g4 as16 b %195
+		\tuplet 3/2 8 { b as g } as4 a8 b a4 \tuplet 3/2 8 { a16 b c }
+		b8. b,16 \tuplet 3/2 8 { b d es f[ g as] } b4 r
+		R1
+		g4.\f as16 b \appoggiatura b as8 g4 as16 b
+		f'4. es8 \appoggiatura es d4 r8 b' %200
+		h16( c) e,( f) a( b) d,( es) \tuplet 3/2 8 { as b g f[ g es] d es c b[ c as] }
+		\tuplet 3/2 8 { g[ f es] as g f } es8 d \appoggiatura d es4 r
+		r2 r16 g\pE d16. h32 g16. h32 d16. fis32
+		g4 r r16 c g16. es32 c16. es32 g16. h32
+		c4 r b8 as4 g8 %205
+		f4 f16 g8 a16 \appoggiatura a8 b4 r
+		as8 g4 f8 \appoggiatura f es4 r
+		r8 c' r b r as r g
+		as,4 r r2
+		R1 %210
+		r2 r16 \mvTr b\fE-\tuttiE d16. f32 b16. d32 f16. b32
+		as4 r r16 es, g16. b32 es16. f32 g16. as32
+		b8 c4 b16 as b8 c4 b16 as
+		b8.( c32 b) as8 g \slurDashed g( f16.) b32 f16( es) es( d) \slurSolid
+		c4. d16 es d8 g4 f16 es %215
+		d8 b' c, a' b f f8.( as32 f)
+		es8 es es8.( g32 es) d16 es8 d32 c b8. a16
+		b8 r r4 r16 f a16. c32 f16. c'32 a16. f32
+		\appoggiatura f8 es4 r r16 b, d16. f32 b16. d32 f16. b32
+		h8 d4 c16 h c8 g4 f16 es %220
+		d8.( f32 es) d8 c c h16. h32 h16 c8 d16
+		d4. c16 h c8 f4 es16 d
+		c4 h c8 g' g8.( b!32 g)
+		as8 f f8.( as32 f) g16 f8 es32 d c8. h16
+		c4 r r16 f, as16. c32 f16. g32 as([ g f es)] %225
+		\appoggiatura es8 d4 r r16 es, g16. b32 es16. f32 g16. as32
+		b8 c4 b16 as b8 c4 b16 as
+		b8.( c32 b) as8 g g f r f
+		f8.(\trillE g32 as) g8 g a8.(\trillE g32 a) b8 b,
+		b8.( c32 des) c8 f es4 d %230
+		es8 b b8.(\trillE c32 des) c8 \tuplet 3/2 8 { as'16 g f } es8 d
+		es b b8.( c32 des) \appoggiatura des8 c4 r8 as
+		g4 f es2\fermata \bar "||" %233 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

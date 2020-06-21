@@ -283,6 +283,64 @@ OQuamSopranoLyrics = \lyricmode {
 	tum. %159 finis
 }
 
+EiaMaterSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 4/4 \autoBeamOff \tempoEiaMater
+			\set Score.currentBarNumber = #165
+		R1*46 %210
+		\mvTr es'4.\fE^\tutti es8 es d r4
+		f4. f8 f es r4
+		b8( c4) b16([ as)] b8( c4) b16([ as)]
+		b8.([ c32 b] as8) g g f r4
+		c'4. d16([ es)] d8( es4) d16([ c)] %215
+		b4 a b r
+		R1
+		b4. b8 b a r4
+		c4. c8 c b r4
+		h8( d4) c16([ h)] c8( es4) d16([ c)] %220
+		d8.([ f32 es] d8) c c h r4
+		d4. c16([ h)] c8( f4) es16([ d)]
+		c4 h c r
+		R1
+		c4. b!8 b as r4 %225
+		b4. as8 as g r4
+		b8( c4) b16([ as)] b8( c4) b16([ as)]
+		b8.([ c32 b] as8) g g f r f
+		f8.([ g32 as)] g8 g a4 b8 r
+		r4 r8 f' es4 d %230
+		es8 r r4 r2
+		r8 b b8.([ c32 des)] c4 r8 as
+		g4 f es2\fermata \bar "||" %233 finis
+	}
+}
+
+EiaMaterSopranoLyrics = \lyricmode {
+	Tu -- i na -- ti %211
+	vul -- ne -- ra -- ti,
+	tam __ di -- gna -- ti
+	pro __ me pa -- ti,
+	poe -- nas me -- cum %215
+	di -- vi -- de.
+
+	Fac me te -- cum
+	pi -- e fle -- re,
+	cru -- ci -- fi -- xo %220
+	con -- do -- le -- re,
+	do -- nec e -- go
+	vi -- xe -- ro.
+
+	Iux -- ta cru -- cem %225
+	te -- cum sta -- re,
+	et __ me ti -- bi
+	so -- ci -- a -- re in
+	plan -- ctu, in plan -- ctu
+	de -- si -- de -- %230
+	ro,
+	in plan -- ctu de --
+	si -- de -- ro. %233 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

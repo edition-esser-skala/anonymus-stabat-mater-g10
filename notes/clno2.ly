@@ -28,3 +28,28 @@ StabatMaterClarinoII = {
 		e1\fermata-\critnote \bar "||" %22 finis
 	}
 }
+
+EiaMaterClarinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoEiaMater
+			\set Score.currentBarNumber = #165
+		R1*46 %210
+		c'4.\fE c8 g4 r
+		d'4. d8 d c r4
+		e8 f4 e16 d e8 f4 e16 d
+		e4 d8 c g4 r
+		R1 %215
+		d'4 d d r
+		R1*6 %222
+		r8 e,16 e e8 e16 e e4 r
+		R1*3 %226
+		e'8 f4 e16 d e8 f4 e16 d
+		e4 d8 c g4 r8 g
+		g4 c r2
+		r4 r8 d c4 g %230
+		e r r2
+		r8 e'16 e e e e e f4 r8 d
+		c4 g e2\fermata \bar "||" %233 finis
+	}
+}

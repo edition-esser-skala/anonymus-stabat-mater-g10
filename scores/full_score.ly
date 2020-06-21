@@ -80,61 +80,130 @@
 	% 		\midi { \tempo 4 = 60 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		subtitle = "O   Q U A M   T R I S T I S   E T   A F F L I C T A"
+	% 	}
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\OQuamViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\OQuamViolinoII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \OQuamSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \OQuamSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \OQuamAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \OQuamAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \OQuamTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \OQuamTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \OQuamBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \OQuamBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\OQuamOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \OQuamBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4. = 50 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			subtitle = "O   Q U A M   T R I S T I S   E T   A F F L I C T A"
+			title = "E I A,   M A T E R,   F O N S   A M O R I S"
 		}
 		\score {
 			<<
 				\new StaffGroup <<
-					\new GrandStaff <<
+					\new Staff {
+						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+						\set Staff.soloText = \markup { \medium \remark "Solo" }
+						% \transpose c es
+						\partcombine \EiaMaterClarinoI \EiaMaterClarinoII
+					}
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\OQuamViolinoI
+							\EiaMaterViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\OQuamViolinoII
+							\EiaMaterViolinoII
 						}
 					>>
+					\new Staff {
+						\set Staff.instrumentName = \markup \center-column { "vla" "solo" }
+						\EiaMaterViola
+					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \OQuamSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \EiaMaterSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \OQuamSopranoLyrics
+					\new Lyrics \lyricsto Soprano \EiaMaterSopranoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \OQuamAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \EiaMaterAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \OQuamAltoLyrics
+					\new Lyrics \lyricsto Alto \EiaMaterAltoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \OQuamTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \EiaMaterTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \OQuamTenoreLyrics
+					\new Lyrics \lyricsto Tenore \EiaMaterTenoreLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \OQuamBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \EiaMaterBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \OQuamBassoLyrics
+					\new Lyrics \lyricsto Basso \EiaMaterBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\OQuamOrgano
+						\EiaMaterOrgano
 					}
 				>>
-				\new FiguredBass { \OQuamBassFigures }
+				\new FiguredBass { \EiaMaterBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4. = 50 }
+			% \midi { \tempo 4 = 60 }
 		}
 	}
 }

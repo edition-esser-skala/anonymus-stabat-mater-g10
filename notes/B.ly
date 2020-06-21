@@ -142,6 +142,64 @@ OQuamBassoLyrics = \lyricmode {
 	tum. %159 finis
 }
 
+EiaMaterBassoNotes = {
+	\relative c {
+		\clef bass
+		\key es \major \time 4/4 \autoBeamOff \tempoEiaMater
+			\set Score.currentBarNumber = #165
+		R1*46 %210
+		\mvTr es4.\fE^\tutti es8 b' b, r4
+		b'4. b8 es, es r4
+		es4. es8 es4. es8
+		es4 as b8 b, r4
+		f'4. f8 b8( es,4) es8 %215
+		f4. f8 b,4 r
+		R1
+		b4. b'8 f f, r4
+		f'4. f8 b b, r4
+		g'4. g8 c,4. c'8 %220
+		f,4. f8 g g, r4
+		g'4. g,8 c( f4) f8
+		g4. g,8 c4 r
+		R1
+		c4. c8 f f, r4 %225
+		b4. b8 es es r4
+		es4. es8 es4. es8
+		es4 as b8 b, r b
+		b4 b8 b b4 b8 r
+		r4 r8 as' b4 b, %230
+		es8 r r4 r2
+		r8 es es4 as r8 as
+		b4 b, es2\fermata \bar "||" %233 finis
+	}
+}
+
+EiaMaterBassoLyrics = \lyricmode {
+	Tu -- i na -- ti %211
+	vul -- ne -- ra -- ti,
+	tam di -- gna -- ti
+	pro me pa -- ti,
+	poe -- nas me -- cum %215
+	di -- vi -- de.
+
+	Fac me te -- cum
+	pi -- e fle -- re,
+	cru -- ci -- fi -- xo %220
+	con -- do -- le -- re,
+	do -- nec e -- go
+	vi -- xe -- ro.
+
+	Iux -- ta cru -- cem %225
+	te -- cum sta -- re,
+	et me ti -- bi
+	so -- ci -- a -- re in
+	plan -- ctu, in plan -- ctu
+	de -- si -- de -- %230
+	ro,
+	in plan -- ctu de --
+	si -- de -- ro. %233 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

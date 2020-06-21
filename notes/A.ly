@@ -281,6 +281,64 @@ OQuamAltoLyrics = \lyricmode {
 	tum. %159 finis
 }
 
+EiaMaterAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 4/4 \autoBeamOff \tempoEiaMater
+			\set Score.currentBarNumber = #165
+		R1*46 %210
+		\mvTr g'4.\fE^\tutti g8 g f r4
+		as4. as8 as g r4
+		g8( as4) g16([ f)] g8( as4) g16([ f)]
+		g8.([ as32 g] f8) es es d r4
+		f4. f8 f(^\critnote g4) f16([ es)] %215
+		d4 c d r
+		R1
+		f4. f8 f f r4
+		a4. a8 f f r4
+		d8( f4) es16([ d)] es8( g4) f16([ es)] %220
+		f8.([ as32 g] f8) es es d r4
+		f4. es16([ d)] es8( as4) g16([ f)]
+		es4 d c r
+		R1
+		g'4. g8 g f r4 %225
+		f4. f8 f es r4
+		g8( as4) g16([ f)] g8( as4) g16([ f)]
+		g8.([ as32 g] f8) es es d r d
+		d8.([ es32 f)] es8 es es4 f8 r
+		r4 r8 as g4 f %230
+		g8 r r4 r2
+		r8 g g8.([ as32 b)] as4 r8 f
+		es4 d es2\fermata \bar "||" %233 finis
+	}
+}
+
+EiaMaterAltoLyrics = \lyricmode {
+	Tu -- i na -- ti %211
+	vul -- ne -- ra -- ti,
+	tam __ di -- gna -- ti
+	pro __ me pa -- ti,
+	poe -- nas me -- cum %215
+	di -- vi -- de.
+
+	Fac me te -- cum
+	pi -- e fle -- re,
+	cru -- ci -- fi -- xo %220
+	con -- do -- le -- re,
+	do -- nec e -- go
+	vi -- xe -- ro.
+
+	Iux -- ta cru -- cem %225
+	te -- cum sta -- re,
+	et __ me ti -- bi
+	so -- ci -- a -- re in
+	plan -- ctu, in plan -- ctu
+	de -- si -- de -- %230
+	ro,
+	in plan -- ctu de --
+	si -- de -- ro. %233 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble
