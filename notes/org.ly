@@ -743,6 +743,137 @@ VirgoBassFigures = \figuremode {
 	r2 %348 finis
 }
 
+ChristeOrgano = {
+	\relative c {
+		\clef bass
+		\key es \major \time 3/4 \tempoChriste
+			\set Score.currentBarNumber = #349
+		\mvTr es4\fE-\soloE es es
+		es es es %350
+		es es es
+		es es g
+		b b, b
+		es es r
+		d c b %355
+		r c b
+		es es e
+		f f, r
+		f'2 f,4
+		b r r8 d %360
+		es4 f f,
+		b2 r4
+		\mvTr es-!\p-\critnote es-! es-!
+		es-! es-! es-!
+		es-! es-! es-! %365
+		es-! es-! es-!
+		es as, as
+		b b d
+		f2 f,4
+		b r r %370
+		f'2 f,4
+		b r r8 d
+		es4 g es
+		b d b
+		es f f, %375
+		b\fE c b
+		r c b
+		es es es
+		es d r
+		es d d %380
+		es f f,
+		b2 r4
+		es\pE es es
+		e e e
+		f d! d %385
+		es! as, as
+		b2 r4
+		b2 b4
+		es r es
+		as, as as' %390
+		b b, b
+		b2 b4
+		es r r
+		b2 b4
+		es r r %395
+		as as as
+		es es es
+		as b b,
+		es\f f es
+		r f es %400
+		as as as
+		as g r
+		as g r
+		b,2 b'4
+		es, r r %405
+		as b b,
+		g'8 as b4 b,
+		es2.\fermata \bar "||" %408 finis
+	}
+}
+
+ChristeBassFigures = \figuremode {
+	r2. %349
+	<6 4> %350
+	<5 3>8 <6 4> <\t \t>2
+	q4 <5 3> <6>
+	r2 <7>4
+	<9 4> <8 3>2
+	<6>4 <6!>2 %355
+	r4 q2
+	<6>2 <5>4
+	<9 4> <8 _!>2
+	<7 5 [_!]>4 <6 4> <5 _!>
+	r2 r8 <6> %360
+	r4 <8 6>8. <7 5>16 <6 4>8. <5 _!>16
+	r2.
+	r
+	<6 4>
+	<\t \t>4 <5 3>2 %365
+	<6 4>2.
+	<5 3>
+	<6 4>4 <5 3> <6>
+	<7 5 _!> <6 4> <5 _!>
+	r2. %370
+	<7 5 _!>4 <6 4> <5 _!>
+	r2 r8 <6>
+	r4 <6>2
+	r4 q2
+	q4 <6 4> <5 _!> %375
+	r <6!>2
+	r4 q2
+	<6>2.
+	<4! 2>4 <6>2
+	<4! 2>4 <6>2 %380
+	q4 <6 4> <5 _!>
+	r2.
+	r
+	<7->2 <\t>8 <6>
+	r4 <7> <\t>8 <6> %385
+	r4 <9 7>4 <\t \t>8 <8 6>
+	<6 4>4 <5 3>2
+	<7 5>4 <6 4> <5 3>
+	r2.
+	<9 7>4 <8 6> <7 5> %400
+	<6 4> <5 3>2
+	<7 5>4 <6 4> <5 3>
+	r2.
+	<7 5>4 <6 4> <5 3>
+	r2. %405
+	r
+	r
+	<6>4 <6 4> <5 3>
+	r <6>2
+	r4 q2 %410
+	q <5>4
+	<2> <6>2
+	<2>4 <6>2
+	<7 5>4 <6 4> <5 3>
+	r2. %415
+	<6>4 <6 4> <5 3>
+	<6>8 <5> <6 4>4 <5 3>
+	r2. %418 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
@@ -756,67 +887,7 @@ VirgoBassFigures = \figuremode {
 
 
 
-	% \time 3/4 \tempoChriste \newSpacingSection
-	% 	\mvTr es4\fE-\tuttiE es es \noBreak
-	% es es es %350
-	% es es es
-	% es es g
-	% b b, b
-	% es es r
-	% d c b %355
-	% r c b
-	% es es e
-	% f f, r
-	% f'2 f,4
-	% b r r8 d %360
-	% es4 f f,
-	% b2 r4
-	% es-!\p es-! es-!
-	% es-! es-! es-!
-	% es-! es-! es-! %365
-	% es-! es-! es-!
-	% es as, as
-	% b b d
-	% f2 f,4
-	% b r r %370
-	% f'2 f,4
-	% b r r8 d
-	% es4 g es
-	% b d b
-	% es f f, %375
-	% b c b
-	% r c b
-	% es es es
-	% es d r
-	% es d d %380
-	% es f f,
-	% b2 r4
-	% es es es
-	% e e e
-	% f d d %385
-	% es! as, as
-	% b2 r4
-	% b2 b4
-	% es r es
-	% as, as as' %390
-	% b b, b
-	% b2 b4
-	% es r r
-	% b2 b4
-	% es r r %395
-	% as as as
-	% es es es
-	% as b b,
-	% es\f f es
-	% r f es %400
-	% as as as
-	% as g r
-	% as g r
-	% b,2 b'4
-	% es, r r %405
-	% as b b,
-	% g'8 as b4 b, \noBreak
-	% es2.\fermata \bar "||"
+
 	% \clef treble \time 2/2 \tempoAmen \newSpacingSection
 	% 	es'2 es' \noBreak
 	% d des %410
@@ -884,20 +955,7 @@ VirgoBassFigures = \figuremode {
 
 
 
-	% r2.
-	% <6 4> %350
-	% <5 3>8 <6 4> <\t \t>2
-	% q4 <5 3> <6>
-	% r2 <7>4
-	% <9 4> <8 3>2
-	% <6>4 <6!>2 %355
-	% r4 q2
-	% <6>2 <5>4
-	% <9 4> <8 _!>2
-	% <7 5>4 <6 4> <5 _!>
-	% r2 r8 <6> %360
-	% r4 <8 6>8 <7 5> <6 4> <5 _!>
-	% r2.*47 %408
+
 	% r1
 	% r %410
 	% r

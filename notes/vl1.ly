@@ -382,6 +382,74 @@ VirgoViolinoI = {
 	}
 }
 
+ChristeViolinoI = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 3/4 \tempoChriste
+			\set Score.currentBarNumber = #349
+		es'4\f b r8 b
+		c es es4.\trill d16 c %350
+		b8 es es4.\trill d16 c
+		c4\trill b r
+		d8.[ es16 f8. g16] as( f) c'( as)
+		as4 g r
+		b8. f16 \appoggiatura f es4 \appoggiatura es8 d4 %355
+		b'8. f16 \appoggiatura f es4 \appoggiatura es8 d4
+		c \tuplet 3/2 4 { g'8 f es d c b }
+		b4 a r
+		es' d c
+		d16( es) es( f) f( g) g( a) \appoggiatura a8 b4 %360
+		r8 es, d8.[ c16 b8. a16]
+		\appoggiatura a4 b2 r4
+		b\p b r8 b
+		c es es4.\trill d16 c
+		c4\trill b r8 b %365
+		c es es4.\trill d16 c
+		b8 c c4.\trill b16 as
+		g4 f r
+		es' d c
+		d16(\f es) es( f) f( g) g( a) b( f) f( d) %370
+		es4\p d c
+		d16(\f es) es( f) f( g) g( a) b4
+		r8 es,\p r es r es
+		r d r d r d
+		\tuplet 3/2 4 { es d c } b4 a %375
+		b'8.\f f16 \appoggiatura f8 es4 d
+		b'8. f16 \appoggiatura f8 es4 d
+		c4. g'8 g32([ f es d)] \tuplet 3/2 8 { c16 d b }
+		\appoggiatura b8 a4 b8 g' f16 es d c
+		\appoggiatura b8 a4 b r %380
+		r8 es d8. c16 b8. a16
+		\appoggiatura a4 b2 r4
+		es\p b r8 b
+		b des des4.\trill c16 b
+		as8 c c4.\trill b16 as %385
+		g8 b b4.\trill as16 g
+		g4 f r
+		as g f
+		g16( as) as( b) b( c) c( d) es( f) f( g)
+		g4 f es %390
+		es d r
+		as g f
+		g16(\f as) as( b) b( c) c( d) es( f) f( g)
+		as4\p g f
+		g16(\f as) as( b) b( g) g( es) es( b) b( g) %395
+		r8 c\pE r as' r c,
+		r b r g' r b,
+		\tuplet 3/2 4 { c as' f } es4 d
+		es8.\f b16 \appoggiatura b8 as4 g
+		es'8. b16 \appoggiatura b8 as4 g %400
+		f'4. c'8 \tuplet 3/2 8 { c16[ as g] f g es }
+		\appoggiatura es8 d4 es8 c' as16( g f es)
+		\appoggiatura es8 d4 es r
+		as, g f
+		g16( as) as( b) b( c) c( d) es( f) f( g) %405
+		\tuplet 3/2 4 { as8 g f } es4 d
+		es8. as,16 g4 f
+		es2.\fermata \bar "||" %408 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

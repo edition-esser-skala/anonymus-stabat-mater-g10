@@ -337,3 +337,25 @@ VirgoViolinoII = {
 		c4 r\fermata \bar "||" %348 finis
 	}
 }
+
+ChristeViolinoII = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 3/4 \tempoChriste
+			\set Score.currentBarNumber = #349
+		g'4\fE g g
+		as as as %350
+		g8 c c4. b16 as
+		as4\trill g r
+		b8.[ c16 d8. es16] f( d) as'( f)
+		f4 es r
+		b a b %355
+		r a b
+		g2.~
+		g4 f r
+		c' b a
+		\slurDashed b16( c) c( d) d( es) es( c) \slurSolid \appoggiatura c8 d4 %360
+		r8 g, f8.[ es16 d8. c16]
+		\appoggiatura c4 d2 r4
+	}
+}

@@ -339,6 +339,84 @@ EiaMaterAltoLyrics = \lyricmode {
 	si -- de -- ro. %233 finis
 }
 
+ChristeAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 3/4	\autoBeamOff \tempoChriste
+			\set Score.currentBarNumber = #349
+		R2.*14 %362
+		\mvTr g'4\pE^\soloE g r
+		as8 c c4. b16([ as)]
+		as4 g r %365
+		as8 c c4.( b16[ as]
+		g8) as as4. g16([ f)]
+		es4 d r
+		c' b( a)
+		b r r %370
+		c b( a)
+		b r r
+		g2.
+		f2 f4
+		\tuplet 3/2 4 { g8([ f es)] } d4 c %375
+		d r r
+		R2.*6 %382
+		g4 g r
+		g8 b b4. as16([ g)]
+		f8[ as] as4. g16[ f] %385
+		es8[ g] g4. f16[ es]
+		es4 d r
+		f( es) d
+		es16([ f) f( g)] g([ as) as( f)] g([ as)] as([ b)]
+		b4( as) g %390
+		g f r
+		f8 f es4( d)
+		es r r
+		f8 f es4( d)
+		es r r %395
+		as2.
+		g
+		as4 g f
+		g r r
+		R2.*8 %407
+		R2.\fermataMarkup \bar "||" %408 finis
+	}
+}
+
+ChristeAltoLyrics = \lyricmode {
+	Chri -- ste, %363
+	cum sit hinc ex --
+	i -- re, %365
+	da per ma --
+	trem me ve --
+	ni -- re
+	ad pal --
+	mam, %370
+	ad pal --
+	mam,
+	ad
+	pal -- mam
+	vi -- cto -- ri -- %375
+	ae.
+
+	Quan -- do %383
+	cor -- pus mo -- ri --
+	e -- _ _ %385
+	_ _ _
+	_ tur,
+	fac __ ut
+	a -- _ _ ni --
+	ma __ do -- %390
+	ne -- tur
+	pa -- ra -- di --
+	si,
+	pa -- ra -- di --
+	si %395
+	glo --
+	_
+	_ _ ri --
+	ae. %399 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

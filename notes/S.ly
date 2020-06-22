@@ -341,6 +341,84 @@ EiaMaterSopranoLyrics = \lyricmode {
 	si -- de -- ro. %233 finis
 }
 
+ChristeSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 3/4 \autoBeamOff \tempoChriste
+			\set Score.currentBarNumber = #349
+		R2.*14 %362
+		\mvTr es'8([\pE^\solo b)] b4 r
+		c8 es es4. d16([ c)]
+		c4 b r %365
+		c8 es es4.( d16[ c]
+		b8) c c4. b16([ as)]
+		g4 f r
+		es' d( c)
+		d r r %370
+		es d( c)
+		d r r
+		es2.
+		d2 d4
+		\tuplet 3/2 4 { es8([ d c)] } b4 a %375
+		b r r
+		R2.*6 %382
+		es4 b r
+		b8 des des4. c16([ b)]
+		as8[ c] c4. b16[ as] %385
+		g8[ b] b4. as16[ g]
+		g4 f r
+		as( g) f
+		g16([ as) as( b)] b([ c) c( d)] es([ f)] f([ g)]
+		g4( f) es %390
+		es d r
+		as8 as g4( f)
+		g r r
+		as8 as g4( f)
+		g r r %395
+		c2.
+		b
+		\tuplet 3/2 4 { c8[ as' f] } es4 d
+		\appoggiatura d8 es4 r r
+		R2.*8 %407
+		R2.\fermataMarkup \bar "||" %408 finis
+	}
+}
+
+ChristeSopranoLyrics = \lyricmode {
+	Chri -- ste, %363
+	cum sit hinc ex --
+	i -- re, %365
+	da per ma --
+	trem me ve --
+	ni -- re
+	ad pal --
+	mam, %370
+	ad pal --
+	mam,
+	ad
+	pal -- mam
+	vi -- cto -- ri -- %375
+	ae.
+
+	Quan -- do %383
+	cor -- pus mo -- ri --
+	e -- _ _ %385
+	_ _ _
+	_ tur,
+	fac __ ut
+	a -- _ _ ni --
+	ma __ do -- %390
+	ne -- tur
+	pa -- ra -- di --
+	si,
+	pa -- ra -- di --
+	si %395
+	glo --
+	_
+	_ _ ri --
+	ae. %399 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble
