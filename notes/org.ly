@@ -502,6 +502,247 @@ EiaMaterBassFigures = \figuremode {
 	<6 4>4 <5 3>2. %233 finis
 }
 
+VirgoOrgano = {
+	\relative c {
+		\clef bass
+		\twofourtime \key c \minor \time 2/4 \tempoVirgoVirginum
+			\set Score.currentBarNumber = #234
+		\mvTr c4\fE-\soloE es \noBreak
+		f f, %235
+		r8 g' a h
+		c4 g8 es
+		c4 es
+		f f,
+		r8 g a h %240
+		c4 c
+		c c
+		c c
+		r8 c d e
+		f4 f, %245
+		b b
+		b b
+		r8 b c d
+		es2
+		g,~-\tastoE %250
+		g~
+		g~
+		g
+		c8 r es r
+		f r as r %255
+		g4 f
+		es f
+		g g,
+		c r
+		c\p es %260
+		f f,
+		r8 g' a h
+		c4 g8 es
+		c4 es
+		f f, %265
+		r8 g a h
+		c4 g
+		c'8 r b! r
+		as r g r
+		r as as as %270
+		g4 r
+		c, c
+		c c
+		r8 c d e
+		f4 f, %275
+		b b
+		b b
+		r8 b c d
+		es4 es
+		es8 r d r %280
+		c r cis r
+		d c b a
+		g\fE r b r
+		c r es r
+		d\pE c b c %285
+		d2
+		g,4\fE b
+		c d
+		es b
+		c d %290
+		g,8 g g g
+		g4 r
+		\mvTr g\p-\tastoE g
+		g g
+		g g %295
+		g g
+		g g
+		g g
+		g g
+		g g %300
+		g g
+		g g
+		g'8 f es d
+		c4 e
+		f b, %305
+		c c
+		f f,
+		b d
+		es as,
+		b b %310
+		es es
+		h h
+		c g
+		g2~-\tastoE
+		g~ %315
+		g~
+		g4 r
+		c8 r es r
+		f r as r
+		g f es f %320
+		g4 g,
+		c8\fE r es r
+		f r as r
+		g\pE f es f
+		g4 g, %325
+		c\f c
+		c c
+		r8 c d e
+		f4 f,
+		b b %330
+		b b
+		r8 b c d
+		es4 es
+		g,2~-\tastoE
+		g~ %335
+		g~
+		g4 r
+		c8 r es r
+		f r as r
+		g4 f %340
+		es f
+		g g,
+		c8 r es r
+		f r as r
+		g4 f %345
+		es f
+		g g,
+		c r\fermata \bar "||" %348 finis
+	}
+}
+
+VirgoBassFigures = \figuremode {
+	r4 <6> %234
+	r2 %235
+	r8 <_!> <7> <6 5>
+	r2
+	r4 <6>
+	r2
+	r8 <_!> <7> <6 5> %240
+	r2
+	<5 _!>4 <6 4>
+	<5 _!> <6 4>
+	<7 _!>2 \bassFigureExtendersOn
+	q4 \bassFigureExtendersOff <8 3> %245
+	<5 3> <6 4>
+	<5 3> <6 4>
+	<7 5>2 \bassFigureExtendersOn
+	q4 \bassFigureExtendersOff <8 3>
+	r2 %250
+	r
+	r
+	r
+	r4 <6>
+	r <6\\> %255
+	<_!> <\t>
+	<6>2
+	<6 4>4 <5 _!>
+	r2
+	r4 <6> %260
+	r2
+	r8 <_!> <7> <6 5>
+	r2
+	r4 <6>
+	r2 %265
+	r8 <_!> <7> <6 5>
+	r2
+	r4 <2>
+	r <2>
+	r8 <6\\>4. %270
+	<_!>2
+	<5 _!>4 <6 4>
+	<5 _!> <6 4>
+	<7 _!>2 \bassFigureExtendersOn
+	q4 \bassFigureExtendersOff <8 3> %275
+	<5 3> <6 4>
+	<5 3> <6 4>
+	<7 5>2 \bassFigureExtendersOn
+	q4 \bassFigureExtendersOff <8 3>
+	r4 <2> %280
+	r <5 _!>
+	<5! _+>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff
+	r4 <6>
+	r <6\\>
+	<5! _+>8 <\t \t> <6> <5> %285
+	<5! 4>4 <\t _+>
+	r4 <6>
+	<6 5> <_+>
+	<5 3> <6>
+	<6 5> <_+> %290
+	r2
+	r
+	r
+	r
+	r %295
+	r
+	r
+	r
+	r
+	r %300
+	r
+	r
+	<_!>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff
+	<_!>4 <6 5->
+	r <_-> %305
+	<9- 7 _!>8 \bassFigureExtendersOn <8 6 _!>4 <7 5 _!>8 \bassFigureExtendersOff
+	<9 4>4 <8 3>
+	r <6 5>
+	r2
+	<9- 7>8 <8 6>4 <7 5>8 %310
+	<9 4>4 <8 3>
+	<9 7 _!>8 \bassFigureExtendersOn <8 6 _!>4 <7 5 _!>8 \bassFigureExtendersOff
+	<9 4>8 <8 3> <5 _!>4
+	r2
+	r %315
+	r
+	r
+	r4 <6>
+	r <6\\>
+	<_!>8 <\t> <6> <5> %320
+	<6 4>4 <5 _!>
+	r <6>
+	r <6>
+	<_!>8 <\t> <6> <5>
+	<6 4>4 <5 _!> %325
+	<5 _!> <6 4>
+	<5 _!> <6 4>
+	<7 _!>2 \bassFigureExtendersOn
+	q4 \bassFigureExtendersOff <8 3>
+	<5 3> <6 4> %330
+	<5 3> <6 4>
+	<7 5>2 \bassFigureExtendersOn
+	q4 \bassFigureExtendersOff <8 3>
+	r2
+	r %335
+	r
+	r
+	r4 <6>
+	r <6\\>
+	<_!> <\t> %340
+	<6>2
+	<6 4>4 <5 _!>
+	r4 <6>
+	r <6\\>
+	<_!> <\t> %345
+	<6>2
+	<6 4>4 <5 _!>
+	r2 %348 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
@@ -514,122 +755,7 @@ EiaMaterBassFigures = \figuremode {
 % }
 
 
-	% \twofourtime \time 2/4 \tempoVirgoVirginum \newSpacingSection
-	% 	\mvTr c4\fE-\soloE es \noBreak
-	% f f, %235
-	% r8 g' a h
-	% c4 g8 es
-	% c4 es
-	% f f,
-	% r8 g a h %240
-	% c4 c
-	% c c
-	% c c
-	% r8 c d e
-	% f4 f, %245
-	% b b
-	% b b
-	% r8 b c d
-	% es2
-	% g,~ %250
-	% g~
-	% g~
-	% g
-	% c8 r es r
-	% f r as r %255
-	% g4 f
-	% es f
-	% g g,
-	% c r
-	% c\p es %260
-	% f f,
-	% r8 g' a h
-	% c4 g8 es
-	% c4 es
-	% f f, %265
-	% r8 g a h
-	% c4 g
-	% c'8 r b! r
-	% as r g r
-	% r as as as %270
-	% g4 r
-	% c, c
-	% c c
-	% r8 c d e
-	% f4 f, %275
-	% b b
-	% b b
-	% r8 b c d
-	% es4 es
-	% es8 r d r %280
-	% c r cis r
-	% d c b a
-	% g r b r
-	% c r es r
-	% d c b c %285
-	% d2
-	% \mvTr g,4\fE-\tutti b
-	% c d
-	% es b
-	% c d %290
-	% g,8 g g g
-	% g4 r
-	% g\p g
-	% g g
-	% g g %295
-	% g g
-	% g g
-	% g g
-	% g g
-	% g g %300
-	% g g
-	% g g
-	% g'8 f es d
-	% c4 e
-	% f b, %305
-	% c c
-	% f f,
-	% b d
-	% es as,
-	% b b %310
-	% es es
-	% h h
-	% c g
-	% g2~
-	% g~ %315
-	% g~
-	% g4 r
-	% c8 r es r
-	% f r as r
-	% g f es f %320
-	% g4 g,
-	% c8 r es r
-	% f r as r
-	% g f es f
-	% g4 g, %325
-	% c\f c
-	% c c
-	% r8 c d e
-	% f4 f,
-	% b b %330
-	% b b
-	% r8 b c d
-	% es4 es
-	% g,2~
-	% g~ %335
-	% g~
-	% g4 r
-	% c8 r es r
-	% f r as r
-	% g4 f %340
-	% es f
-	% g g,
-	% c8 r es r
-	% f r as r
-	% g4 f %345
-	% es f
-	% g g, \noBreak
-	% c r\fermata \bar "||"
+
 	% \time 3/4 \tempoChriste \newSpacingSection
 	% 	\mvTr es4\fE-\tuttiE es es \noBreak
 	% es es es %350
@@ -758,7 +884,6 @@ EiaMaterBassFigures = \figuremode {
 
 
 
-	% r2*115 %348
 	% r2.
 	% <6 4> %350
 	% <5 3>8 <6 4> <\t \t>2

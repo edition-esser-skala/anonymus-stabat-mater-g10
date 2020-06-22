@@ -259,6 +259,129 @@ EiaMaterViolinoI = {
 	}
 }
 
+VirgoViolinoI = {
+	\relative c' {
+		\clef treble
+		\twofourtime \key c \minor \time 2/4 \tempoVirgoVirginum
+			\set Score.currentBarNumber = #234
+		c''8\fE c4 g8
+		as f4 d16 h %235
+		g4. f'8
+		es16 d c c c4
+		c8 c4 g8
+		as f4 d16 h
+		g4. f'8 %240
+		es16 d c c c4
+		e'8 e4 f8
+		g g4 as8
+		\appoggiatura { g16[ as] } b2~
+		b4 as %245
+		d,8 d4 es!8
+		f f4 g8
+		\appoggiatura { f16[ g] } as2~
+		as4 g
+		g8 d4 \appoggiatura f16 \tuplet 3/2 8 { es d c } %250
+		h8 c4 c32( d es f)
+		g8 d4 \tuplet 3/2 8 { es16 d c }
+		\appoggiatura c8 h4 r
+		c8 c' r g
+		r as r fis %255
+		r g4 h,8~
+		h c4 f,!8~
+		f es16 g g,8 h
+		c4 r
+		c''8\p c4 g8 %260
+		as f4 d16 h
+		g4. f'8
+		es16 d c c c4
+		c8 c4 g8
+		as f4 d16 h %265
+		g4. f'8
+		\appoggiatura f es4 d
+		r8 c' r c
+		r c r c
+		r c c c %270
+		h4 r
+		e8 e4 f8
+		g g4 as8
+		\appoggiatura { g16[ as] } b2~
+		b4 as %275
+		d,8 d4 es!8
+		f f4 g8
+		\appoggiatura { f16[ g] } as2~
+		as4 g
+		r8 g, r g %280
+		r g r g
+		\appoggiatura g16 fis2
+		g8\f g' r d
+		r es r cis\p
+		d b,4 c8  %285
+		d2
+		g8\fE g'4 g,8~
+		g a a16( es') d( fis,)
+		g8 g'4 g,8~
+		g a a16( es') d( fis,) %290
+		g( b) g( b) g( b) g( b)
+		g4 r
+		g8\p g4 g8
+		as! as4 h8
+		c c4 c8 %295
+		c h4 h8
+		g g4 g8
+		as! as4 h8
+		c c4 c8
+		c h4 h8 %300
+		c c4 c8
+		h g4 d8
+		h4 r
+		c'8 c4 b!8
+		as16 b c4 des8~ %305
+		des c4 b8
+		b4 as
+		b8 b4 as8
+		g16 as b4 c8~
+		c b4 as8 %310
+		as4 g
+		as8 g4 f8
+		\appoggiatura f es4 d
+		g'8 d4 \tuplet 3/2 8 { es16 d c }
+		h8 c4 c32( d es f) %315
+		g8 d4 \tuplet 3/2 8 { es16 d c }
+		\appoggiatura c8 h4 r
+		c8 c' r g
+		r as r fis~
+		fis g4 f,8~ %320
+		f es16 g g,8 h
+		c\f c'' r g
+		r as r fis~\p
+		fis g4 f,8~
+		f es16 g g,8 h %325
+		c\f e'4 f8
+		g g4 as8
+		\appoggiatura { g16[ as] } b2~
+		b4 as
+		d,8 d4 es!8 %330
+		f f4 g8
+		\appoggiatura { f16[ g] } as2~
+		as4 g
+		g8 d4 \tuplet 3/2 8 { es16 d c }
+		h8 c4 c32( d es f) %335
+		g8 d4 \tuplet 3/2 8 { es16 d c }
+		\appoggiatura c8 h4 r
+		c8 c' r g
+		r as r fis~
+		fis g4 h,8~ %340
+		h c4 f,!8~
+		f es16 g g,8 h
+		c c'' r g
+		r as r fis~
+		fis g4 h,8~ %345
+		h c4 f,!8~
+		f es16 g g,8 h
+		c4 r\fermata \bar "||" %348 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

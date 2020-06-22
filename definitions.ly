@@ -463,7 +463,6 @@ bc =
 	}
 	\context {
 		\ChoirStaff
-		\override SystemStartBracket.collapse-height = #1
 		\override StaffGrouper.staffgroup-staff-spacing =
 		  #'((basic-distance . 15)
          (minimum-distance . 15)

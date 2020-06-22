@@ -137,73 +137,112 @@
 	% 		\midi { \tempo 4. = 50 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		title = "E I A,   M A T E R,   F O N S   A M O R I S"
+	% 	}
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+	% 					\set Staff.soloText = \markup { \medium \remark "Solo" }
+	% 					% \transpose c es
+	% 					\partcombine \EiaMaterClarinoI \EiaMaterClarinoII
+	% 				}
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\EiaMaterViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\EiaMaterViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup \center-column { "vla" "solo" }
+	% 					\EiaMaterViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \EiaMaterSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \EiaMaterSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \EiaMaterAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \EiaMaterAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \EiaMaterTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \EiaMaterTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \EiaMaterBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \EiaMaterBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\EiaMaterOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \EiaMaterBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 60 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			title = "E I A,   M A T E R,   F O N S   A M O R I S"
+			title = "V I R G O   V I R G I N U M   P R A E C L A R A"
 		}
 		\score {
 			<<
 				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\set Staff.soloText = \markup { \medium \remark "Solo" }
-						% \transpose c es
-						\partcombine \EiaMaterClarinoI \EiaMaterClarinoII
-					}
-				>>
-				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
+					\new GrandStaff <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\EiaMaterViolinoI
+							\VirgoViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\EiaMaterViolinoII
+							\VirgoViolinoII
 						}
 					>>
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "vla" "solo" }
-						\EiaMaterViola
-					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \EiaMaterSopranoNotes }
-					}
-					\new Lyrics \lyricsto Soprano \EiaMaterSopranoLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \EiaMaterAltoNotes }
-					}
-					\new Lyrics \lyricsto Alto \EiaMaterAltoLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \EiaMaterTenoreNotes }
-					}
-					\new Lyrics \lyricsto Tenore \EiaMaterTenoreLyrics
-
-					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \EiaMaterBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \VirgoBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \EiaMaterBassoLyrics
+					\new Lyrics \lyricsto Basso \VirgoBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\EiaMaterOrgano
+						\VirgoOrgano
 					}
 				>>
-				\new FiguredBass { \EiaMaterBassFigures }
+				\new FiguredBass { \VirgoBassFigures }
 			>>
 			\layout { }
-			% \midi { \tempo 4 = 60 }
+			\midi { \tempo 4 = 120 }
 		}
 	}
 }

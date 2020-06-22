@@ -200,6 +200,145 @@ EiaMaterBassoLyrics = \lyricmode {
 	si -- de -- ro. %233 finis
 }
 
+VirgoBassoNotes = {
+	\relative c {
+		\clef bass
+		\twofourtime \key c \minor \time 2/4 \autoBeamOff \tempoVirgoVirginum
+			\set Score.currentBarNumber = #234
+		R2*26 %259
+		\mvTr c'4.\pE^\soloE g8 %260
+		as( f4) d16([ h)]
+		g4. f'8
+		es16([ d c c)] c4
+		c'4. g8
+		as( f4) d16([ h)] %265
+		g4. f'8
+		\appoggiatura f es4 d
+		c c'
+		c4. as8
+		\appoggiatura g fis4. fis8 %270
+		g4 r
+		e4. f8
+		g4. as8
+		b4. b8
+		b4 as %275
+		d,4. es!8
+		f4. g8
+		as4. as8
+		as4 g
+		g2 %280
+		g
+		fis
+		R
+		r4 r8 cis'
+		\appoggiatura cis8 d4 b,8 c %285
+		d4. d8
+		g,4 r
+		R2*5 %292
+		g'4. g8
+		as!4. h8
+		\appoggiatura h c4. fis,8 %295
+		\appoggiatura fis g4 g,
+		g'4. g8
+		as!4 as8 h
+		\appoggiatura h c4. fis,8
+		g g, g' h %300
+		\appoggiatura h c4. fis,8
+		g4. g,8
+		g4 r
+		c'8 c4 b!8
+		as16([ b)] c4 des8 %305
+		des c4 b8
+		b4 as
+		b8 b4( as8)
+		g16([ as] b4) c8
+		c( b4) as8 %310
+		as4 g
+		as8( g4) f8
+		\appoggiatura f es4 d
+		g2
+		g4 g8 g %315
+		g4. g8
+		g4 r
+		c2~
+		c4 r8 fis,
+		g4 c8 f, %320
+		g4. g,8
+		c4 r
+		r r8 fis
+		g4 c8 f,
+		g4. g8 %325
+		c,4 r
+		R2*21 %347
+		R2\fermataMarkup \bar "||" %348 finis
+	}
+}
+
+VirgoBassoLyrics = \lyricmode {
+	Vir -- go %261
+	vir -- gi --
+	num prae --
+	cla -- ra,
+	mi -- hi %265
+	iam non
+	sis a --
+	ma -- ra,
+	fac me
+	te -- cum %270
+	plan -- ge -- re.
+	Fac, ut
+	por -- tem
+	Chri -- sti
+	mor -- tem, %275
+	pas -- si --
+	o -- nis
+	fac con --
+	sor -- tem
+	et %280
+	pla --
+	gas,
+
+	et
+	pla -- gas re -- %285
+	co -- le --
+	re.
+
+	Fac me %293
+	pla -- gis
+	vul -- ne -- %295
+	ra -- ri,
+	fac me
+	cru -- ce in --
+	e -- bri --
+	a -- ri et cru -- %300
+	o -- re
+	fi -- li --
+	i.
+	Flam -- mis ne
+	u -- rar, ne %305
+	u -- rar suc --
+	cen -- sus
+	per te, __
+	vir -- go,
+	sim de -- %310
+	fen -- sus,
+	sim de --
+	fen -- sus
+	in
+	di -- e iu -- %315
+	di -- ci --
+	i,
+	in, __
+	in
+	di -- e iu -- %320
+	di -- ci --
+	i,
+	in
+	di -- e iu --
+	di -- ci -- %325
+	i. %326 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

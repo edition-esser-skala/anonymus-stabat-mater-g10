@@ -214,3 +214,126 @@ EiaMaterViolinoII = {
 		es4 d es2\fermata \bar "||" %233 finis
 	}
 }
+
+VirgoViolinoII = {
+	\relative c' {
+		\clef treble
+		\twofourtime \key c \minor \time 2/4 \tempoVirgoVirginum
+			\set Score.currentBarNumber = #234
+		c''8\fE c4 g8
+		as f4 d16 h %235
+		g4. f'8
+		es16 d c c c4
+		c8 c4 g8
+		as f4 d16 h
+		g4. f'8 %240
+		es16 d c c c4
+		c'8 c4 d8
+		e e4 f8
+		\appoggiatura { e16[ f] } g2~
+		g4 f %245
+		b,8 b4 c8
+		d8 d4 es!8
+		\appoggiatura { d16[ es] } \once \tieDashed f2~
+		f4 es
+		h, c %250
+		d es
+		h c
+		d r
+		c'8 c' r g
+		r as r fis %255
+		r g4 h,8~
+		h c4 f,!8~
+		f es16 g g,8 h
+		c4 r
+		c''8\p c4 g8 %260
+		as f4 d16 h
+		g4. f'8
+		es16 d c c c4
+		c8 c4 g8
+		as f4 d16 h %265
+		g4. d'8
+		\appoggiatura d c4 h
+		r8 es r es
+		r es r es
+		r es es c %270
+		d4 r
+		c'8 c4 d8
+		e e4 f8
+		\appoggiatura { e16[ f] } g2~
+		g4 f %275
+		b,8 b4 c8
+		d8 d4 es!8
+		\appoggiatura { d16[ es] } f2~
+		f4 es
+		r8 es, r es %280
+		r es r e
+		d2
+		g8\f g' r d
+		r es r cis\p
+		d b,4 c8  %285
+		d2
+		g8\fE g'4 g,8~
+		g a a16( es') d( fis,)
+		g8 g'4 g,8~
+		g a a16( es') d( fis,) %290
+		g( b) g( b) g( b) g( b)
+		g4 r
+		g8\p g4 g8
+		g g4 f!8
+		es fis4 fis8 %295
+		g g4 g,8
+		g' g4 g8
+		g g4 f!8
+		es fis4 fis8
+		g g4 f8 %300
+		es fis4 fis8
+		g d4 h8
+		g4 r
+		e' g
+		f16 g as4 b8~ %305
+		b as4 g8
+		g4 f
+		d f
+		es16 f g4 as8~
+		as g4 f8 %310
+		f4 es
+		f8 es4 d8
+		\appoggiatura d c4-\critnote h
+		h c
+		d es %315
+		h c
+		d r
+		c'8 c' r g
+		r as r fis~
+		fis g4 f,8~ %320
+		f es16 g g,8 h
+		c\f c'' r g
+		r as r fis~\p
+		fis g4 f,8~
+		f es16 g g,8 h %325
+		c\f c'4 d8
+		e e4 f8
+		\appoggiatura { e16[ f] } g2~
+		g4 f
+		b,8 b4 c8 %330
+		d8 d4 es!8
+		\appoggiatura { d16[ es] } f2~
+		f4 es
+		h, c
+		d es %335
+		h c
+		d r
+		c'8 c' r g
+		r as r fis~
+		fis g4 h,8~ %340
+		h c4 f,!8~
+		f es16 g g,8 h
+		c c'' r g
+		r as r fis~
+		fis g4 h,8~ %345
+		h c4 f,!8~
+		f es16 g g,8 h
+		c4 r\fermata \bar "||" %348 finis
+	}
+}
