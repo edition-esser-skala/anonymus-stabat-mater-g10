@@ -444,7 +444,7 @@ bc =
 	\context {
 		\Score
 		\compressFullBarRests
-		\override BarNumber.break-visibility = #'#(#f #t #t)
+		% \override BarNumber.break-visibility = #'#(#f #t #t)
 	}
 	\context {
 		\StaffGroup
