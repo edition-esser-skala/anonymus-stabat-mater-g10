@@ -357,6 +357,7 @@ ChristeViolinoII = {
 		\slurDashed b16( c) c( d) d( es) es( c) \slurSolid \appoggiatura c8 d4 %360
 		r8 g, f8.[ es16 d8. c16]
 		\appoggiatura c4 d2 r4
+		s2.*46 \bar "||" %408 finis
 	}
 }
 
