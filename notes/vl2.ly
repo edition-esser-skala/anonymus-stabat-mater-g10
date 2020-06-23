@@ -359,3 +359,12 @@ ChristeViolinoII = {
 		\appoggiatura c4 d2 r4
 	}
 }
+
+AmenViolinoII = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 2/2 \tempoAmen
+			\set Score.currentBarNumber = #409
+		s1*55 \bar "|."
+	}
+}

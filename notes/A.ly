@@ -417,13 +417,110 @@ ChristeAltoLyrics = \lyricmode {
 	ae. %399 finis
 }
 
-% AltoNotes = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
-%
-% AltoLyrics = \lyricmode {
-%
-% }
+AmenAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 2/2 \autoBeamOff \tempoAmen
+			\set Score.currentBarNumber = #409
+		R1*5 %413
+		\mvTr b2\fE^\tuttiE b'
+		a as %415
+		g c
+		a4 f b2
+		as4 g f2
+		g g4 as
+		b1~ %420
+		b2 as~
+		as g
+		f4 f es2
+		d b'
+		c1 %425
+		b2 g
+		c4 a b b
+		as1
+		g2 g(
+		f) es %430
+		es \once \tieDashed f~
+		f b
+		as2. f4
+		g2. es4
+		f2. d4 %435
+		es2 es4 f
+		g1~
+		g2 fis
+		f es8[ f] g4
+		fis g g( fis) %440
+		g2 g
+		a1
+		g
+		a2. g4~
+		g2. f4~ %445
+		f2. es4
+		d2 g
+		f b
+		a as
+		g c %450
+		h b
+		as g
+		f r
+		R1*3 %456
+		r2 g
+		f es~
+		es f~
+		f g %460
+		f1
+		g2 f
+		g r\fermata \bar "|." %463 FINIS
+	}
+}
+
+AmenAltoLyrics = \lyricmode {
+	A -- men, %414
+	a -- men, %415
+	a -- _
+	_ _ men,
+	a -- men, a --
+	men, a -- _
+	_ %420
+	_
+	men,
+	a -- men, a --
+	men, a --
+	_ %425
+	_ _
+	_ men, a -- men,
+	a --
+	men, a --
+	men, %430
+	a -- _
+	_
+	_ _
+	_ _
+	_ _ %435
+	men, a -- _
+	_
+	_
+	_ _ men,
+	a -- men, a -- %440
+	men, a --
+	_
+	_
+	_ _
+	_ %445
+	_
+	men, a --
+	_ _
+	_ _
+	_ _ %450
+	_ _
+	_ _
+	men,
+
+	a -- %457
+	_ _
+	_
+	men, %460
+	a --
+	men, a --
+	men. %463 FINIS
+}

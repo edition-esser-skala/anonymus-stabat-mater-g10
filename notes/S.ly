@@ -419,13 +419,113 @@ ChristeSopranoLyrics = \lyricmode {
 	ae. %399 finis
 }
 
-% SopranoNotes = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
-%
-% SopranoLyrics = \lyricmode {
-%
-% }
+AmenSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 2/2 \autoBeamOff \tempoAmen
+			\set Score.currentBarNumber = #409
+		\mvTr es2\fE^\tuttiE es'
+		d des %410
+		c f
+		d!4 b es2
+		es4 d c2
+		b d
+		c f~ %415
+		f es~
+		es2. d4
+		c8[ d] es4 es( d)
+		es2 es
+		f1 %420
+		es
+		d2. c8[ b]
+		a4 b b( a)
+		b2 r
+		R1*4 %428
+		es,2 es'
+		d des %430
+		c f
+		d!4 b es2~
+		es4 c d2~
+		d4 h c2~
+		c h %435
+		c c
+		d1
+		c
+		d4 h c2
+		a4 b c2 %440
+		b b4 c
+		d1~
+		d2 c~
+		c2. b4~
+		b2. as!4~ %445
+		as2. g4
+		f2 es'
+		d des
+		c f
+		e es %450
+		d g
+		f es
+		d r
+		R1*3 %456
+		r2 es
+		d des
+		c f
+		d!4 b es2 %460
+		es( d)
+		es d
+		es r\fermata \bar "|." %463 FINIS
+	}
+}
+
+AmenSopranoLyrics = \lyricmode {
+	A -- men, %409
+	a -- men, %410
+	a -- _
+	_ _ men,
+	a -- men, a --
+	men, a --
+	_ _ %415
+	_
+	_
+	_ men, a --
+	men, a --
+	_ %420
+	_
+	_ men,
+	a -- men, a --
+	men,
+
+	a -- men, %429
+	a -- men, %430
+	a -- _
+	_ _ _
+	_ _
+	_ _
+	_ %435
+	men, a --
+	_
+	_
+	_ _ men,
+	a -- men, a -- %440
+	men, a -- _
+	_
+	_
+	_
+	_ %445
+	_
+	men, a --
+	_ _
+	_ _
+	_ _ %450
+	_ _
+	_ _
+	men,
+
+	a -- %457
+	_ _
+	_ _
+	_ _ men, %460
+	a --
+	men, a --
+	men. %463 FINIS
+}

@@ -874,140 +874,131 @@ ChristeBassFigures = \figuremode {
 	r2. %418 finis
 }
 
-% Organo = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassFigures = \figuremode {
-%
-% }
+AmenOrgano = {
+	\relative c {
+		\clef treble
+		\key es \major \time 2/2 \tempoAmen
+			\set Score.currentBarNumber = #409
+		\mvTr es'2\fE-\tuttiE es' %409
+		d des %410
+		c f
+		d!4 b es2~
+		es4 d c2
+		<< {
+			b d
+			c f~ %415
+			f es~
+			es2. d4
+			c8 d es2 d4
+		} \\ {
+			b,2 b'
+			a as %415
+			g c
+			a4 f b2
+			as4 g f2
+		} >>
+		\clef "treble_8" es, es'
+		d des %420
+		c f
+		d!4 b es2~
+		es4 d c2
+		\clef bass b, b'
+		a as %425
+		g c
+		a4 f b g
+		f1
+		es2 g4 as!
+		b2 g %430
+		as as~
+		as g4 es
+		f2. b,4
+		es2. c4
+		d2 g, %435
+		c \clef "treble_8" c'
+		h b
+		a d
+		h4 g \once \tieDashed c2~
+		c4 b a2 %440
+		\clef bass g, g'
+		fis f
+		e a
+		fis4 d g2
+		e?4 c f2 %445
+		d4 b es2
+		b es
+		b1
+		f'
+		c %450
+		g'
+		as2 as,
+		b b-!\pE
+		b-! b-!
+		b-! b-! %455
+		b-! b-!
+		es-! es\fE
+		b' g
+		as4 as, as'2~
+		as g4 es %460
+		b'2 b,
+		es b
+		es r\fermata \bar "|." %463 FINIS
+	}
+}
 
-
-
-
-	% \clef treble \time 2/2 \tempoAmen \newSpacingSection
-	% 	es'2 es' \noBreak
-	% d des %410
-	% c f
-	% d!4 b es2~
-	% es4 d c2
-	% << {
-	% 	b d
-	% 	c f~ %415
-	% 	f es~
-	% 	es2. d4
-	% 	c8 d es2 d4
-	% } \\ {
-	% 	b,2 b'
-	% 	a as %415
-	% 	g c
-	% 	a4 f b2
-	% 	as4 g f2
-	% } >>
-	% \clef "treble_8" es, es'
-	% d des %420
-	% c f
-	% d!4 b es2~
-	% es4 d c2
-	% \clef bass b, b'
-	% a as %425
-	% g c
-	% a4 f b g
-	% f1
-	% es2 g4 as!
-	% b2 g %430
-	% as as~
-	% as g4 es
-	% f2. b,4
-	% es2. c4
-	% d2 g, %435
-	% c c'
-	% h b
-	% a d
-	% h4 g \once \tieDashed c2~
-	% c4 b a2 %440
-	% g, g'
-	% fis f
-	% e a
-	% fis4 d g2
-	% es!4 c f2 %445
-	% d4 b es2
-	% b es
-	% b1
-	% f'
-	% c %450
-	% g'
-	% as2 as,
-	% b b-!
-	% b-! b-!
-	% b-! b-! %455
-	% b-! b-!
-	% es-! es
-	% b' g
-	% as4 as, as'2~
-	% as g4 es %460
-	% b'2 b,
-	% es b
-	% es r\fermata \bar "|." %463 FINIS
-
-
-
-
-	% r1
-	% r %410
-	% r
-	% r
-	% r
-	% r
-	% r %415
-	% r
-	% r
-	% r
-	% r
-	% <6>2 <[\t> %420
-	% <7> q
-	% <6 5> <7>4 <6>8 <5>
-	% <4! 2>4 <6> <7> <6!>
-	% r1
-	% <6>2 <\t> %425
-	% <7> q
-	% <6>2. q4
-	% <7 _->2 <6 \t>
-	% r <6>
-	% r <5-> %430
-	% <5> <6>
-	% <4! 2> <6>
-	% <7> <6>
-	% <7> <6>
-	% <7> q %435
-	% r1
-	% <6>2 <\t>
-	% <7> <7 _+>
-	% <5!>1
-	% <4+ 2>4 <6> <7> <6\\> %440
-	% r1
-	% <6>2 <\t>
-	% <7> q
-	% <5> <9 4>4 <8 _->
-	% <6 5>2 <9 4>4 <8 _-> %445
-	% <5>2 <9 4>4 <8 3>
-	% r1
-	% <3>2 <_->
-	% <_!> <_->
-	% <_!> <_-> %450
-	% <_!> <_->
-	% <8 6>2 <7 5>
-	% <5 3>1
-	% r
-	% r %455
-	% r
-	% r2 <5>
-	% r <5->
-	% <5> <6>
-	% <2> <6> %460
-	% <4> <3>
-	% r1
-	% r %463 FINIS
+AmenBassFigures = \figuremode {
+	r1 %409
+	r %410
+	r
+	r
+	r
+	r
+	r %415
+	r
+	r
+	r
+	r
+	<6>2 <[\t> %420
+	<7> q
+	<6 5>4 <[\t \t]> <7> <6>8 <5>
+	<4! 2>4 <6> <7> <6!>
+	r1
+	<6>2 <\t> %425
+	<7> q
+	<6 [5]>4 <[\t \t]>2 <6>4
+	<7 _->2 <6 \t>
+	r <6>
+	r <5-> %430
+	<5> <6>
+	<4! 2> <6>
+	<7> <6>
+	<7> <6>
+	<7> <7 [_!]> %435
+	r1
+	<6>2 <\t>
+	<7> <7 [5!] _+>
+	<5!>4 <[7 _!]>2.
+	<[6!] 4+ 2>4 <6> <7> <6\\> %440
+	r1
+	\bo <6 [_!]>2 \bc <\t [\t]>
+	<7> <7 [5!]>
+	<5 [_!]>4 <[\t \t]> <9! 4> <8 _->
+	<6 5> <[\t \t]> <9 4> <8 _-> %445
+	<5>4 <[\t]> <9 4> <8 3>
+	r1
+	<3>2 <_->
+	<_!> <_->
+	<_!> <_-> %450
+	<_!> <_->
+	<8 6>2 <7 5>
+	<5 3>1
+	r
+	r %455
+	r
+	r2 <5>
+	r <5->
+	<5> <6>
+	<2> <6> %460
+	<4> <3>
+	r1
+	r %463 FINIS
+}

@@ -339,13 +339,84 @@ VirgoBassoLyrics = \lyricmode {
 	i. %326 finis
 }
 
-% BassoNotes = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassoLyrics = \lyricmode {
-%
-% }
+AmenBassoNotes = {
+	\relative c {
+		\clef bass
+		\key es \major \time 2/2 \autoBeamOff \tempoAmen
+			\set Score.currentBarNumber = #409
+		R1*15 %423
+		\mvTr b2\fE^\tuttiE b'
+		a as %425
+		g c
+		a4 f b g
+		f1
+		es2 g4( as!
+		b2) g %430
+		as1~
+		as2 g4 es
+		f2. b,4
+		es2. c4
+		d2 g, %435
+		c r
+		R1*4 %440
+		g2 g'
+		fis f
+		e a
+		fis4 d g2
+		e?4 c f2 %445
+		d4 b es2
+		b es
+		b r
+		f'1
+		c %450
+		g'
+		as
+		b2 r
+		R1*3 %456
+		r2 es,
+		b' g
+		as4 as, as'2~
+		as g4 es %460
+		b1
+		es2 b
+		es r\fermata \bar "|." %463 FINIS
+	}
+}
+
+AmenBassoLyrics = \lyricmode {
+	A -- men, %424
+	a -- men, %425
+	a -- _
+	_ _ _ men,
+	a --
+	men, a --
+	men, %430
+	a --
+	_ _
+	_ _
+	_ _
+	_ _ %435
+	men,
+
+	a -- men, %441
+	a -- men,
+	a -- _
+	_ _ _
+	_ _ _ %445
+	_ _ _
+	men, a --
+	men,
+	a --
+	_ %450
+	_
+	_
+	men,
+
+	a -- %457
+	_ _
+	_ _ _
+	_ men, %460
+	a --
+	men, a --
+	men. %463 finis
+}

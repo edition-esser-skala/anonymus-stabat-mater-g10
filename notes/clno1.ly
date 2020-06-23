@@ -79,3 +79,36 @@ EiaMaterClarinoI = {
 		e4 d c2\fermata \bar "||" %233 finis
 	}
 }
+
+AmenClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 2/2 \tempoAmen
+			\set Score.currentBarNumber = #409
+		R1*15 %423
+		g''1\fE
+		a %425
+		g
+		a4 fis g2
+		f1
+		e2 r
+		R1*5 %434
+		r2 \pa e, %435
+		e \pd r
+		R1*8 %444
+		g'2. f4 %445
+		f2. e4
+		d2 r
+		R1*3 %450
+		r2 g
+		f e
+		d g\pE
+		f4 d \once \tieDashed f2~
+		f4 e r2 %455
+		R1*4
+		r2 e\fE %460
+		d1
+		e2 d
+		c r\fermata \bar "|." %463 FINIS
+	}
+}

@@ -245,49 +245,114 @@
 	% 		\midi { \tempo 4 = 120 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		subtitle = "C H R I S T E,   C U M   S I T   H I N C   E X I R E"
+	% 	}
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\ChristeViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\ChristeViolinoII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \ChristeSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \ChristeSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \ChristeAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \ChristeAltoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\ChristeOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \ChristeBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 90 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			subtitle = "C H R I S T E,   C U M   S I T   H I N C   E X I R E"
+			subtitle = "A M E N"
 		}
 		\score {
 			<<
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+						\set Staff.soloText = \markup { \medium \remark "Solo" }
+						% \transpose c es
+						\partcombine \AmenClarinoI \AmenClarinoII
+					}
+				>>
 				\new StaffGroup <<
 					\new GrandStaff <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\ChristeViolinoI
+							\AmenViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\ChristeViolinoII
+							\AmenViolinoII
 						}
 					>>
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \ChristeSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \AmenSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \ChristeSopranoLyrics
+					\new Lyrics \lyricsto Soprano \AmenSopranoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \ChristeAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \AmenAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \ChristeAltoLyrics
+					\new Lyrics \lyricsto Alto \AmenAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \AmenTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \AmenTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \AmenBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \AmenBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\ChristeOrgano
+						\AmenOrgano
 					}
 				>>
-				\new FiguredBass { \ChristeBassFigures }
+				\new FiguredBass { \AmenBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 90 }
+			\midi { \tempo 2 = 120 }
 		}
 	}
 }

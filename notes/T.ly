@@ -271,13 +271,96 @@ EiaMaterTenoreLyrics = \lyricmode {
 	si -- de -- ro. %233 finis
 }
 
-% TenoreNotes = {
-% 	\relative c' {
-% 		\clef "treble_8"
-%
-% 	}
-% }
-%
-% TenoreLyrics = \lyricmode {
-%
-% }
+AmenTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key es \major \time 2/2 \autoBeamOff \tempoAmen
+			\set Score.currentBarNumber = #409
+		R1*10 %418
+		\mvTr es,2\fE^\tuttiE es'
+		d des %420
+		c f
+		d!4 b es2
+		es4 d c2
+		b d4 es
+		f1~ %425
+		f2 es~
+		es d4( es)
+		es2( d)
+		es b~
+		b b %430
+		as( c)
+		b r
+		R1*3 %435
+		c,2 c'
+		h b
+		a d
+		h4 g c2
+		c4( b a2) %440
+		g2 d'~
+		d1
+		e
+		d
+		c %445
+		b
+		b2 b~
+		b f'~
+		f c~
+		c g'~ %450
+		g d
+		c1
+		b2 r
+		R1*3 %456
+		r2 \once \tieDashed b~
+		b1
+		as2 c
+		b b %460
+		b1
+		b2 b
+		b r\fermata \bar "|." %463 FINIS
+	}
+}
+
+AmenTenoreLyrics = \lyricmode {
+	A -- men, %419
+	a -- men, %420
+	a -- _
+	_ _ men,
+	a -- men, a --
+	men, a -- _
+	_ %425
+	_
+	men,
+	a --
+	men, a --
+	men, %430
+	a --
+	men,
+
+	a -- men, %436
+	a -- men,
+	a -- _
+	_ _ men,
+	a -- %440
+	men, a --
+
+	_
+	_
+	_ %445
+	_
+	men, a --
+	_
+	_
+	_ %450
+	_
+	_
+	men,
+
+	a -- %457
+
+	_ _
+	_ men, %460
+	a --
+	men, a --
+	men. %463 finis
+}
