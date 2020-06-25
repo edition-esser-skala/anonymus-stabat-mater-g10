@@ -357,7 +357,52 @@ ChristeViolinoII = {
 		\slurDashed b16( c) c( d) d( es) es( c) \slurSolid \appoggiatura c8 d4 %360
 		r8 g, f8.[ es16 d8. c16]
 		\appoggiatura c4 d2 r4
-		s2.*46 \bar "||" %408 finis
+		g4\p g r8 g
+		as c c4.\trill b16 as
+		as4\trillE g r8 g %365
+		as c c4.\trillE b16 as
+		g8 as as4.\trillE g16 f
+		\appoggiatura f8 es4 d r
+		c' b a
+		b16(\f c) c( d) d( es) es( c) d d8 b16 %370
+		c4\p b a
+		b16(\f c) c( d) d( es) es( c) d4
+		r8 g,\p r g r g
+		r f r f r f
+		\tuplet 3/2 4 { g f es } d4 c %375
+		d\f a' b
+		r a b
+		g g g
+		f2 r4
+		f f r %380
+		r8 g f8.[ es16 d8. c16]
+		\appoggiatura c4 d2 r4
+		g2\p r8 g
+		g b b4.\trillE as16 g
+		f8 as as4.\trillE g16 f %385
+		es8 g g4.\trillE f16 es
+		es4 d r
+		f es d
+		es16( f) f( g) g( as) as( f) g( as) as( b)
+		b4 as g %390
+		g f r
+		f es d
+		es16(\f f) f( g) g( as) as( b) c( d) d( es)
+		f4\p es d
+		es16(\fE f) f( g) g( es) es( b) b( g) g( es) %395
+		r8 as\pE r c r as
+		r g r b r g
+		as4 g f
+		es\f d es
+		r d es %400
+		c' c c
+		b b r
+		b b r
+		f es d
+		es16( f) f( g) g( as) as( b) c( d) d( es)
+		\tuplet 3/2 4 { c8 b as } g4 f
+		g8. f16 es4 d
+		es2.\fermata \bar "||" %408 finis
 	}
 }
 
@@ -366,6 +411,56 @@ AmenViolinoII = {
 		\clef treble
 		\key es \major \time 2/2 \tempoAmen
 			\set Score.currentBarNumber = #409
-		s1*55 \bar "|."
+		R1*5 %413
+		b2\fE b'
+		a as %415
+		g c
+		a4 f b2
+		as4 g f2
+		g g4 as
+		b1~ %420
+		b2 as~
+		as g
+		f es
+		d b'
+		c1 %425
+		b2 g
+		c4 a b2
+		as1
+		g2 g
+		f \once \tieDashed es~ %430
+		es \once \tieDashed f~
+		f b
+		as2. f4
+		g2. es4
+		f2. d4 %435
+		es2 es4 f
+		g1~
+		g2 fis
+		f es8 f g4
+		fis g2 fis4 %440
+		g2 g
+		a1
+		g
+		a?2. g4~
+		g2. f4~ %445
+		f2. es4
+		d2 g
+		f b
+		a as
+		g c %450
+		h b
+		as g
+		f r
+		R1
+		r2 g\p %455
+		f4( d) f2~
+		f4 es g2\f
+		f es~
+		es f~
+		f g %460
+		f1
+		g2 f
+		g r\fermata \bar "|." %463 FINIS
 	}
 }

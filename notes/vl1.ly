@@ -419,7 +419,7 @@ ChristeViolinoI = {
 		c4. g'8 g32([ f es d)] \tuplet 3/2 8 { c16 d b }
 		\appoggiatura b8 a4 b8 g' f16 es d c
 		\appoggiatura b8 a4 b r %380
-		r8 es d8. c16 b8. a16
+		r8 es d8.[ c16 b8. a16]
 		\appoggiatura a4 b2 r4
 		es\p b r8 b
 		b des des4.\trill c16 b

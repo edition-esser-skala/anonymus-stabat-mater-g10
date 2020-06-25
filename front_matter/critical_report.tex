@@ -83,6 +83,7 @@
 }
 \def\lyrefitem#1{\item[\lyref{#1}]}
 
+\usepackage{multicol}
 
 \makeatletter
 
@@ -169,10 +170,9 @@ if not (scores[last_arg] == nil) then
 end
 }
 
-% uncomment if the full score is in landscape format
-%\ifprintreport
-%\geometry{landscape,outer=127mm}
-%\fi
+\ifprintreport
+\geometry{landscape,outer=127mm}
+\fi
 
 \@ifundefined{lypdfname}{%
   \templatefalse
@@ -218,7 +218,7 @@ Front matter typeset with Source Sans Pro and Fredericka the Great.
 
 This edition bases upon a copy in the Domarchiv Eisenstadt. The digital version of the manuscript is available at \url{http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/984.html} (siglum G 10).
 
-In general, this edition closely follows the manuscript. Any changes that were introduced by the editor are indicated by italic type (lyrics, dynamics and directions), parentheses (expressive marks and bass figures) or dashes (slurs and ties). Accidentals are used according to modern conventions. Asterisks denote changes that are clarified in the detailed remarks below.\footnote{Abbreviations: A, alto; B, bass; b, basses; clno, clarion; Ms, manuscript; org, organ; r, rest; S, soprano; T,~tenor; vl, violin; vla, viola.}
+In general, this edition closely follows the manuscript. Any changes that were introduced by the editor are indicated by italic type (lyrics, dynamics and directions), parentheses (expressive marks and bass figures) or dashes (slurs and ties). Accidentals are used according to modern conventions. Asterisks denote changes that are clarified in the detailed remarks below.\footnote{Abbreviations: A, alto; B, bass; b, basses; clno, clarion; Ms, manuscript; org, organ; r, rest; S, soprano; T,~tenor; vl,~violin; vla, viola.}
 
 \bigskip
 
@@ -241,7 +241,7 @@ In general, this edition closely follows the manuscript. Any changes that were i
 	  & 313 & vl 2   & grace note missing in Ms \\
 	5 & 362–408 & org & Bass figures are missing in the Ms
 	                    and were added by the editor. \\
-	6 & 435 & B      & ? \\
+	6 & 435 & B      & bar in Ms: d2.–G4 \\
 	  & 458 & T      & bar in Ms: f′2–d′2 \\
 	\bottomrule
 \end{longtable}
@@ -254,109 +254,92 @@ This edition has been compiled and checked with utmost diligence. Nevertheless, 
 Wolfgang Esser-Skala}
 
 \cleardoublepage
-\chapter*{Contents.}
+\chapter*{Lyrics.}
 
-\InputIfFileExists{../out/lilypond.toc}{}{\InputIfFileExists{../lilypond.toc}{}{}}
-
-1.
-Stabat mater dolorosa
-iuxta crucem lacrimosa,
+\bigskip
+\begin{multicols}{2}
+\begin{enumerate}[label=\textcolor{oldred}{\Roman*},leftmargin=0pt]
+\item Stabat mater dolorosa\\
+iuxta crucem lacrimosa,\\
 dum pendebat filius.
 
-2.
-Cuius animam gementem,
-contristantem et dolentem
+\item Cuius animam gementem,\\
+contristantem et dolentem\\
 pertransivit gladius.
 
-3.
-O quam tristis et afflicta
-fuit illa benedicta
+\item O quam tristis et afflicta\\
+fuit illa benedicta\\
 mater unigeniti!
 
-4.
-Quae maerebat et dolebat,
-pia mater cum videbat
+\item Quae maerebat et dolebat,\\
+pia mater cum videbat\\
 nati poenas incliti.
 
-5.
-Quis est homo, qui non fleret,
-matrem Christi si videret
+\item Quis est homo, qui non fleret,\\
+matrem Christi si videret\\
 in tanto supplicio?
 
-6.
-Quis non posset contristari,
-Christi matrem contemplari
+\item Quis non posset contristari,\\
+Christi matrem contemplari\\
 dolentem cum filio?
 
-7.
-Pro peccatis suae gentis
-vidit Iesum in tormentis
+\item Pro peccatis suae gentis\\
+vidit Iesum in tormentis\\
 et flagellis subditum.
 
-8.
-Vidit suum dulcem natum
-morientem, desolatum,
+\item Vidit suum dulcem natum\\
+morientem, desolatum,\\
 cum emisit spiritum.
 
-9.
-Eia, mater, fons amoris,
-me sentire vim doloris
+\item Eia, mater, fons amoris,\\
+me sentire vim doloris\\
 fac, ut tecum lugeam.
 
-10.
-Fac, ut ardeat cor meum
-in amando Christum Deum,
+\item Fac, ut ardeat cor meum\\
+in amando Christum Deum,\\
 ut sibi complaceam.
 
-11.
-Sancta mater, istud agas,
-crucifixi fige plagas
+\item Sancta mater, istud agas,\\
+crucifixi fige plagas\\
 cordi meo valide.
 
-12.
-Tui nati vulnerati,
-tam dignati pro me pati,
+\item Tui nati vulnerati,\\
+tam dignati pro me pati,\\
 poenas mecum divide.
 
-13.
-Fac me tecum pie flere,
-crucifixo condolere,
+\item Fac me tecum pie flere,\\
+crucifixo condolere,\\
 donec ego vixero
 
-14.
-Iuxta crucem tecum stare,
-et me tibi sociare
+\item Iuxta crucem tecum stare,\\
+et me tibi sociare\\
 in planctu desidero.
 
-15.
-Virgo virginum praeclara,
-mihi iam non sis amara,
+\item Virgo virginum praeclara,\\
+mihi iam non sis amara,\\
 fac me tecum plangere.
 
-16.
-Fac, ut portem Christi mortem,
-passionis fac consortem
+\item Fac, ut portem Christi mortem,\\
+passionis fac consortem\\
 et plagas recolere.
 
-17.
-Fac me plagis vulnerari,
-fac me cruce inebriari
+\item Fac me plagis vulnerari,\\
+fac me cruce inebriari\\
 et cruore filii.
 
-18.
-Flammis ne urar succensus
-per te, virgo, sim defensus
+\item Flammis ne urar succensus\\
+per te, virgo, sim defensus\\
 in die iudicii.
 
-19.
-Christe, cum sit hinc exire,
-da per matrem me venire
+\item Christe, cum sit hinc exire,\\
+da per matrem me venire\\
 ad palmam victoriae.
 
-20.
-Quando corpus morietur,
-fac ut anima donetur
+\item Quando corpus morietur,\\
+fac ut anima donetur\\
 paradisi gloriae.
+\end{enumerate}
+\end{multicols}
 
 \cleardoublepage
 \fi

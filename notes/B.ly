@@ -356,7 +356,7 @@ AmenBassoNotes = {
 		as2 g4 es
 		f2. b,4
 		es2. c4
-		d2 g, %435
+		d2^\critnote g, %435
 		c r
 		R1*4 %440
 		g2 g'
