@@ -2,13 +2,18 @@
 % This file is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 % To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-\version "2.18.0"
+\version "2.22.0"
 
 \include "../definitions.ly"
 
 \paper {
-	#(set-paper-size "a4" 'landscape)
-	indent = 1\cm
+  #(set-paper-size "a4landscape")
+  top-margin = 1\cm
+  bottom-margin = .5\cm
+  outer-margin = 2\cm
+  inner-margin = 1.5\cm
+  indent = 1\cm
+  #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
 }
 
 #(set-global-staff-size 15.87)
@@ -25,7 +30,7 @@
 					\new Staff {
 						\set Staff.instrumentName = \markup \center-column { "Clarino I, II" "in Es" }
 						% \transpose c es
-						\partcombine \StabatMaterClarinoI \StabatMaterClarinoII
+						\partCombine \StabatMaterClarinoI \StabatMaterClarinoII
 					}
 				>>
 				\new StaffGroup <<
@@ -153,7 +158,7 @@
 						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
 						\set Staff.soloText = \markup { \medium \remark "Solo" }
 						% \transpose c es
-						\partcombine \EiaMaterClarinoI \EiaMaterClarinoII
+						\partCombine \EiaMaterClarinoI \EiaMaterClarinoII
 					}
 				>>
 				\new StaffGroup <<
@@ -256,12 +261,12 @@
 			subtitle = "C H R I S T E,   C U M   S I T   H I N C   E X I R E"
 		}
 		\paper {
-			top-markup-spacing.basic-distance = #2
-			top-markup-spacing.minimum-distance = #2
+			top-markup-spacing.basic-distance = #0
+			top-markup-spacing.minimum-distance = #0
 			markup-system-spacing.basic-distance = #10
 			markup-system-spacing.minimum-distance = #10
-			top-system-spacing.basic-distance = #12
-			top-system-spacing.minimum-distance = #12
+			top-system-spacing.basic-distance = #10
+			top-system-spacing.minimum-distance = #10
 			system-system-spacing.basic-distance = #17
 			system-system-spacing.minimum-distance = #17
 			systems-per-page = #2
@@ -318,7 +323,7 @@
 						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
 						\set Staff.soloText = \markup { \medium \remark "Solo" }
 						% \transpose c es
-						\partcombine \AmenClarinoI \AmenClarinoII
+						\partCombine \AmenClarinoI \AmenClarinoII
 					}
 				>>
 				\new StaffGroup <<

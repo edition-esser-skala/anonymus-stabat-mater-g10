@@ -2,7 +2,7 @@
 % This file is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 % To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-\version "2.18.0"
+\version "2.22.0"
 
 SopranoIncipit = \markup {
 	"Soprano" \hspace #-19 \score {
@@ -177,7 +177,7 @@ OQuamSopranoNotes = {
 		c4 h8
 		c4 r8
 		R4.*4 %163
-		R4.\fermataMarkup \bar "||" %164 finis
+		R4.\fermata \bar "||" %164 finis
 	}
 }
 
@@ -380,7 +380,7 @@ ChristeSopranoNotes = {
 		\tuplet 3/2 4 { c8[ as' f] } es4 d
 		\appoggiatura d8 es4 r r
 		R2.*8 %407
-		R2.\fermataMarkup \bar "||" %408 finis
+		R2.\fermata \bar "||" %408 finis
 	}
 }
 

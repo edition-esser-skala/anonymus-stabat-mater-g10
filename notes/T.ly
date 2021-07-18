@@ -2,7 +2,7 @@
 % This file is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 % To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-\version "2.18.0"
+\version "2.22.0"
 
 TenoreIncipit = \markup {
 	"Tenore" \hspace #-18.5 \score {
@@ -110,7 +110,7 @@ OQuamTenoreNotes = {
 		g4 g8
 		g4 r8
 		R4.*4 %163
-		R4.\fermataMarkup \bar "||" %164 finis
+		R4.\fermata \bar "||" %164 finis
 	}
 }
 

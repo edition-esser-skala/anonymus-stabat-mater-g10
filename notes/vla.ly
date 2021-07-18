@@ -2,7 +2,7 @@
 % This file is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 % To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-\version "2.18.0"
+\version "2.22.0"
 
 EiaMaterViola = {
 	\relative c' {
@@ -36,6 +36,6 @@ EiaMaterViola = {
     c' b as2
     \tuplet 3/2 8 { b16[ as g] c b as } g8 f\trill es4 r
     R1*30 %232
-    R1\fermataMarkup \bar "||" %233 finis
+    R1\fermata \bar "||" %233 finis
 	}
 }
