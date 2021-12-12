@@ -1,14 +1,9 @@
-% (c) 2020 by Wolfgang Esser-Skala.
-% This file is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-% To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
-
 \version "2.22.0"
 
 EiaMaterViola = {
-	\relative c' {
-		\clef treble
-		\key es \major \time 4/4 \tempoEiaMater
-			\set Score.currentBarNumber = #165
+  \relative c' {
+    \clef alto
+    \key es \major \time 4/4 \tempoEiaMater
     es4.\fE f16 g \appoggiatura g8 f4 r8 f
     f4. g16 as \appoggiatura as8 g4 r8 es
     \appoggiatura g16 f8 es4 f16 g \appoggiatura g f8 es4 f16 g
@@ -36,6 +31,6 @@ EiaMaterViola = {
     c' b as2
     \tuplet 3/2 8 { b16[ as g] c b as } g8 f\trill es4 r
     R1*30 %232
-    R1\fermata \bar "||" %233 finis
-	}
+    R1\fermata \bar "|." %233 finis
+  }
 }

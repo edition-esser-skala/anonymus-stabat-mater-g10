@@ -1,17 +1,18 @@
-composer: Anonymus
+composer:
+  last: Anonymus
 title: Stabat mater
-id: (A-Ed G 10)
 genre: sequence
-scoring: S, A, T, B (solo), S, A, T, B (coro), 2 clno (or cor) (Es), 2 vl, vla (or fl), b, org
+scoring: S, A, T, B (solo), S, A, T, B (coro), 2 clno (\flat E), 2 vl, vla, b, org
+license: cc-by-sa-4.0
 sources:
-  1:
+  B1:
     siglum: A-Ed
     shelfmark: G 10
-    type: manuscript copy
-    date: unknown
     rism: 600038407
-    url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/984.html
-github: anonymus-stabat-mater-g10
+    url: https://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/984.html
+    license: public domain
+    principal: true
 imslp: Stabat_Mater,_A-Ed_G_10_(Anonymous)
 notes: last page of vl 2 missing in digital version at A-Ed
-
+parts:
+  clno12: Clarino I, II in \flat E
